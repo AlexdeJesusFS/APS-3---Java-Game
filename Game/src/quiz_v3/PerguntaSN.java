@@ -40,6 +40,20 @@ public class PerguntaSN extends Pergunta {
         return !(resposta != null && resposta.matches("s|n") && resposta != "");
     }
 
+    @Override
+    public void executarPergunta(int numero, Player jogador) {
+        System.out.println(getPerguntas()[numero]);
+        String resposta = super.getTecla().nextLine().toLowerCase().trim();
+        while (verificar(resposta)) {
+            System.out.println("");
+            System.out.println("Resposta Invalida! Digite somente [s] ou [n].");
+            System.out.println(getPerguntas()[numero]);
+            resposta = super.getTecla().nextLine().toLowerCase().trim();
+        }
+        System.out.println("");
+        checarResposta(numero, resposta, jogador);
+    }
+    /*
     public void executarPergunta(int numero, Player jogador) {
        String resposta = null;
         do {            
@@ -58,33 +72,7 @@ public class PerguntaSN extends Pergunta {
 
         } while (verificar(resposta));
     }
-
-    /*
-    @Override
-    public void executarPergunta(int numero, Player jogador) {                   
-        try {
-            System.out.println(getPerguntas()[numero]);
-            System.out.println("Responda com [s] para sim e [n] para não.");
-            String resposta = super.getTecla().nextLine().toLowerCase().trim();
-            verificarErro(resposta, "sn");                        
-            System.out.println("");
-
-            checarResposta(numero, resposta, jogador);
-            limpar();
-        } catch (RespostaInvalidaException ex) {
-            String resposta = null;
-            Logger.getLogger(PerguntaSN.class.getName()).log(Level.SEVERE, null, ex);
-            while (verificar(resposta)) {
-                System.out.println("");
-                resposta = super.getTecla().nextLine().toLowerCase().trim();
-                //verificarErro(resposta, "sn");
-                System.out.println(getPerguntas()[numero]);
-                System.out.println("Responda com [s] para sim e [n] para não.");
-                resposta = super.getTecla().nextLine().toLowerCase().trim();
-            }
-        }           
-    }
-     */
+    */
     //getters e setters
     public static int getNumeroPerguntas() {
         return N_PERGUNTAS;
