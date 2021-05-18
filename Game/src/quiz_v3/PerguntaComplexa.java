@@ -227,13 +227,13 @@ public class PerguntaComplexa extends Pergunta {
         //-opçoes-
         perguntaIni[1][1] = "a)a.";
         perguntaIni[1][2] = "b)b.";
-        perguntaIni[1][3] = "c)c.";
+        perguntaIni[1][3] = "c)Aquecimento global.";
         perguntaIni[1][4] = "d)d.";
         perguntaIni[1][5] = "e)e.";
         //-Segundo Enunciado-
         perguntaMeio[1][0] = "Este fenomeno ocorre devido a _____.";
         //-opções do segundo-
-        perguntaMeio[1][1] = "a)a.";
+        perguntaMeio[1][1] = "a)Produção exagerada e acumulo de gases poluentes na atmosfera terrestre.";
         perguntaMeio[1][2] = "b)b.";
         perguntaMeio[1][3] = "c)c.";
         perguntaMeio[1][4] = "d)d.";
@@ -243,38 +243,38 @@ public class PerguntaComplexa extends Pergunta {
         //-opcoes do terceiro-
         perguntaFim[1][1] = "a)a.";
         perguntaFim[1][2] = "b)b.";
-        perguntaFim[1][3] = "c)c.";
+        perguntaFim[1][3] = "c)Dioxido de carbono.";
         perguntaFim[1][4] = "d)d.";
         perguntaFim[1][5] = "e)e.";
         //-resposta composta da juncao das 3 letras corretas-
-        respostas[1] = "abc";
+        respostas[1] = "cac";
         
       //-Primeiro enunciado-
-        perguntaIni[2][0] = "a _____.";
+        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a agua, se deve principalmente as que provocam aquecimento global _____.";
         //-opçoes-
         perguntaIni[2][1] = "a)a.";
-        perguntaIni[2][2] = "b)b.";
+        perguntaIni[2][2] = "b)Ações humanas.";
         perguntaIni[2][3] = "c)c.";
         perguntaIni[2][4] = "d)d.";
         perguntaIni[2][5] = "e)e.";
         //-Segundo Enunciado-
-        perguntaMeio[2][0] = "b _____.";
+        perguntaMeio[2][0] = "As princiapais acoes causadas pelo homem, que intencificam os problemas atmosfericos no planeta são _____.";
         //-opções do segundo-
         perguntaMeio[2][1] = "a)a.";
         perguntaMeio[2][2] = "b)b.";
-        perguntaMeio[2][3] = "c)c.";
+        perguntaMeio[2][3] = "c)Desmantamento e queima de combustivel fosseis.";
         perguntaMeio[2][4] = "d)d.";
         perguntaMeio[2][5] = "e)e.";
         //-terceiro Enunciado-
-        perguntaFim[2][0] = "c _____.";
+        perguntaFim[2][0] = "Como consequencias das acoes humanas podemos constatar que o aquecimento global provoca _____.";
         //-opcoes do terceiro-
-        perguntaFim[2][1] = "a)a.";
+        perguntaFim[2][1] = "a)Extenção agricula e dos recurso naturais, devastação climatica e altas dos oceanos.";
         perguntaFim[2][2] = "b)b.";
         perguntaFim[2][3] = "c)c.";
         perguntaFim[2][4] = "d)d.";
         perguntaFim[2][5] = "e)e.";
         //-resposta composta da juncao das 3 letras corretas-
-        respostas[2] = "abc";
+        respostas[2] = "bca";
     }
 
 }
