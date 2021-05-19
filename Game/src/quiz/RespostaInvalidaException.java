@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 public class RespostaInvalidaException extends Exception {
 

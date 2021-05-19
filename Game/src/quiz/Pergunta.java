@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 import java.util.Scanner;
 
@@ -19,17 +19,17 @@ public abstract class Pergunta {
     }
 
     public int getQtdPerguntas() {
-		return qtdPerguntas;
-	}
+        return qtdPerguntas;
+    }
 
-	public void setQtdPerguntas(int qtdPerguntas) {
-		this.qtdPerguntas = qtdPerguntas;
-	}
-    
+    public void setQtdPerguntas(int qtdPerguntas) {
+        this.qtdPerguntas = qtdPerguntas;
+    }
+
     //Principal:
     public final static void limpar() {
         //limpa a tela do console 
-        
+
     }
 
     public abstract void definirPerguntas();
@@ -40,23 +40,23 @@ public abstract class Pergunta {
 
     public boolean verificar(String resposta) {
         //return !"a".equals(resposta) && !"b".equals(resposta) && !"c".equals(resposta) && !"d".equals(resposta) && !"e".equals(resposta);
-        return !(resposta != null && resposta.matches("a|b|c|d|e") && !"".equals(resposta));
+        return (resposta != null && resposta.matches("a|b|c|d|e") && !"".equals(resposta));
     }
-    
-    public void verificarErro(String resposta, String tipo) throws RespostaInvalidaException {
-        switch(tipo.toLowerCase().trim()) {
-            case "sn":           
-                if (verificar(resposta)) {
+
+    public void verificarErro(String resposta, char tipo) throws RespostaInvalidaException {
+        switch (tipo) {
+            case 's':
+                if (!verificar(resposta)) {
                     throw new RespostaInvalidaException("Resposta Invalida! Digite somente [s] ou [n].");
                 }
                 break;
-            case "me":
-                if (verificar(resposta)) {
+            case 'm':
+                if (!verificar(resposta)) {
                     throw new RespostaInvalidaException("Resposta Invalida! Digite somente umas das alternativas listadas.");
                 }
                 break;
-            case "n":
-                if (verificar(resposta)) {
+            case 'n':
+                if (!verificar(resposta)) {
                     throw new RespostaInvalidaException("Resposta Invalida! Digite somente números positivos.");
                 }
         }

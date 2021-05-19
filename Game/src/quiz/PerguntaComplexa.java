@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 public class PerguntaComplexa extends Pergunta {
 
@@ -29,6 +29,7 @@ public class PerguntaComplexa extends Pergunta {
     }
 
     //metodos pricipais
+    @Override
     public void checarResposta(int numeroPergunta, String resposta, Player jogador) {
         if (respostas[numeroPergunta].equals(resposta.toLowerCase().trim())) {
             jogador.adicionaPontos();
@@ -37,69 +38,62 @@ public class PerguntaComplexa extends Pergunta {
         }
     }
 
+    @Override
     public void executarPergunta(int numero, Player jogador) {
         //"respostaF" vai guardar os valores de resposta de cada pergunta juntos, "respostaA" vai guardar os valores individuais por um momento
         //"texto" vai ser utilizado para mostrar o texto das perguntas preenchido com as opcoes que o usuario escolher
-        String respostaF = "", respostaA, texto;
+        String respostaF = "", respostaA = "", texto = "";
 
-        //Primeira Pergunta
-        System.out.println(getPerguntaIni()[numero][0]);
-        System.out.println("Escolha a alternativa que completa o texto acima: ");
-        System.out.println(escreveOpcoes(numero, getPerguntaIni()));
-        System.out.print("Resposta: ");
-        respostaA = super.getTecla().nextLine().toLowerCase().trim();
-
-        while (verificar(respostaA)) {
-            System.out.println("");
-            System.out.println("Resposta Invalida! Digite somente uma das alternativas listada.");
+        //Primeira Pergunta     
+        try {
+            System.out.println("Acerte as três perguntas que virão em sequência para ganhar pontos!");
             System.out.println(getPerguntaIni()[numero][0]);
             System.out.println("Escolha a alternativa que completa o texto acima: ");
             System.out.println(escreveOpcoes(numero, getPerguntaIni()));
             System.out.print("Resposta: ");
             respostaA = super.getTecla().nextLine().toLowerCase().trim();
+            verificarErro(respostaA, 'm');
+            System.out.println("");
+        } catch (RespostaInvalidaException ex) {
+            System.out.println("");
+            System.out.println(ex.getMessage());
+            executarPergunta(numero, jogador);
         }
         respostaF += respostaA;
 
         //Segunda Pergunta
-        System.out.println("");
-        texto = completarTexto(getPerguntaIni(), respostaA, numero);
-        texto += getPerguntaMeio()[numero][0];
-        System.out.println(texto); //exibe pergunta inicial completada pela resposta e pegunta meio
-        System.out.println("Escolha a alternativa que completa o texto acima: ");
-        System.out.println(escreveOpcoes(numero, getPerguntaMeio()));
-        System.out.print("Resposta: ");
-        respostaA = super.getTecla().nextLine().toLowerCase().trim();
-
-        while (verificar(respostaA)) {
+        try {
             System.out.println("");
-            System.out.println("Resposta Invalida! Digite somente uma das alternativas listada.");
-            System.out.println(texto);
+            texto = completarTexto(getPerguntaIni(), respostaA, numero);
+            texto += getPerguntaMeio()[numero][0];
+            System.out.println(texto); //exibe pergunta inicial completada pela resposta e pegunta meio
             System.out.println("Escolha a alternativa que completa o texto acima: ");
             System.out.println(escreveOpcoes(numero, getPerguntaMeio()));
             System.out.print("Resposta: ");
-
             respostaA = super.getTecla().nextLine().toLowerCase().trim();
+            verificarErro(respostaA, 'm');
+        } catch (RespostaInvalidaException ex) {
+            System.out.println("");
+            System.out.println(ex.getMessage());
+            executarPergunta(numero, jogador);
         }
         respostaF += respostaA;
 
         //Terceira Pergunta
-        System.out.println("");
-        texto = completarTexto(texto, getPerguntaMeio(), respostaA, numero);
-        texto += getPerguntaFim()[numero][0];
-        System.out.println(texto); //exibe pergunta inicial e meio completa e a pergunta fim
-        System.out.println("Escolha a alternativa que completa o texto acima: ");
-        System.out.println(escreveOpcoes(numero, getPerguntaFim()));
-        System.out.print("Resposta: ");
-        respostaA = super.getTecla().nextLine().toLowerCase().trim();
-
-        while (verificar(respostaA)) {
+        try {
             System.out.println("");
-            System.out.println("Resposta Invalida! Digite somente uma das alternativas listada.");
-            System.out.println(texto);
+            texto = completarTexto(texto, getPerguntaMeio(), respostaA, numero);
+            texto += getPerguntaFim()[numero][0];
+            System.out.println(texto); //exibe pergunta inicial e meio completa e a pergunta fim
             System.out.println("Escolha a alternativa que completa o texto acima: ");
             System.out.println(escreveOpcoes(numero, getPerguntaFim()));
             System.out.print("Resposta: ");
             respostaA = super.getTecla().nextLine().toLowerCase().trim();
+            verificarErro(respostaA, 'm');
+        } catch (RespostaInvalidaException ex) {
+            System.out.println("");
+            System.out.println(ex.getMessage());
+            executarPergunta(numero, jogador);
         }
         respostaF += respostaA;
 
@@ -162,6 +156,7 @@ public class PerguntaComplexa extends Pergunta {
         return resultado;
     }
 
+    @Override
     public void definirPerguntas() {
         /*
         //Molde de como criar uma pergunta composta
@@ -221,9 +216,9 @@ public class PerguntaComplexa extends Pergunta {
         perguntaFim[0][5] = "e)Abraca-lo e pedir desculpas por incomodar.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[0] = "bdb";
-        
+
         //-Primeiro enunciado-
-        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da terra refere-se a _____.";
+        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da terra refere-se ao _____.";
         //-opçoes-
         perguntaIni[1][1] = "a)a.";
         perguntaIni[1][2] = "b)b.";
@@ -231,7 +226,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[1][4] = "d)d.";
         perguntaIni[1][5] = "e)e.";
         //-Segundo Enunciado-
-        perguntaMeio[1][0] = "Este fenomeno ocorre devido a _____.";
+        perguntaMeio[1][0] = " \nEste fenomeno ocorre devido a _____.";
         //-opções do segundo-
         perguntaMeio[1][1] = "a)Produção exagerada e acumulo de gases poluentes na atmosfera terrestre.";
         perguntaMeio[1][2] = "b)b.";
@@ -239,7 +234,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaMeio[1][4] = "d)d.";
         perguntaMeio[1][5] = "e)e.";
         //-terceiro Enunciado-
-        perguntaFim[1][0] = "O principal gás resposável por esse fenômeno é o _____.";
+        perguntaFim[1][0] = " \nO principal gás resposável por esse fenômeno é o _____.";
         //-opcoes do terceiro-
         perguntaFim[1][1] = "a)a.";
         perguntaFim[1][2] = "b)b.";
@@ -248,8 +243,8 @@ public class PerguntaComplexa extends Pergunta {
         perguntaFim[1][5] = "e)e.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[1] = "cac";
-        
-      //-Primeiro enunciado-
+
+        //-Primeiro enunciado-
         perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a agua, se deve principalmente as que provocam aquecimento global _____.";
         //-opçoes-
         perguntaIni[2][1] = "a)a.";
@@ -258,7 +253,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[2][4] = "d)d.";
         perguntaIni[2][5] = "e)e.";
         //-Segundo Enunciado-
-        perguntaMeio[2][0] = "As princiapais acoes causadas pelo homem, que intencificam os problemas atmosfericos no planeta são _____.";
+        perguntaMeio[2][0] = " As princiapais acoes causadas pelo homem, que intencificam os problemas atmosfericos no planeta são _____.";
         //-opções do segundo-
         perguntaMeio[2][1] = "a)a.";
         perguntaMeio[2][2] = "b)b.";
@@ -266,7 +261,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaMeio[2][4] = "d)d.";
         perguntaMeio[2][5] = "e)e.";
         //-terceiro Enunciado-
-        perguntaFim[2][0] = "Como consequencias das acoes humanas podemos constatar que o aquecimento global provoca _____.";
+        perguntaFim[2][0] = " \nComo consequencias das acoes humanas podemos constatar que o aquecimento global provoca _____.";
         //-opcoes do terceiro-
         perguntaFim[2][1] = "a)Extenção agricula e dos recurso naturais, devastação climatica e altas dos oceanos.";
         perguntaFim[2][2] = "b)b.";

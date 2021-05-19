@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 public class Player {
 
@@ -33,7 +33,7 @@ public class Player {
         } else if (getPontuacao() >= 0 && getPontuacao() <= 30) {
             System.out.println("Seu resultado foi mediano " + nome + ", ainda há muitas coisas para aprender sobre a natureza.");
         } else if (getPontuacao() > 30 && getPontuacao() != 100) {
-            System.out.println("Ótimo resultado " + nome + ", cometeu alguns erros mas está muito bem em seus conhecimetos sobre a natureza");
+            System.out.println("Ótimo resultado " + nome + ", cometeu alguns erros mas está muito bem em seus conhecimetos sobre a natureza.");
         } else {
             System.out.println("Muito bem, meus parábens, " + nome + ", você é incrivel não há nada para ser ensinado a você aqui.");
         }

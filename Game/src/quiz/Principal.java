@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 public class Principal {
 
@@ -12,14 +12,14 @@ public class Principal {
 
         psn.executarPergunta(0, jogador);
         //jogador.defineResultado();
-        
+
         pn.executarPergunta(0, jogador);
         //jogador.defineResultado();
 
-        pm.executarPergunta(0,jogador);
+        pm.executarPergunta(0, jogador);
         //jogador.defineResultado();
         //System.out.println(jogador.getPontuacao());
-        
+
         pc.executarPergunta(0, jogador);
         jogador.defineResultado();
         //System.out.println(jogador.getPontuacao());

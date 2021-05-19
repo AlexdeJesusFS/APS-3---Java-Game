@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 public class PerguntaSN extends Pergunta {
 
@@ -16,12 +16,12 @@ public class PerguntaSN extends Pergunta {
     public void definirPerguntas() {
         perguntas[0] = "O efeito estufa é um evento decorrente da quebra da camada de ozônio?";
         respostas[0] = "n";
-        
+
         perguntas[1] = "A partir do lixo orgânico é possivel produzir energia elétrica?";
         respostas[1] = "s";
-        
+
         perguntas[2] = "A floresta amazônica, a maior floresta tropical do mundo, nunca sofreu queimadas e quase não sofre com desmatamento ilegal.\n"
-        		+ "essa frase está correta?";
+                + "essa frase está correta?";
         respostas[2] = "n";
     }
 
@@ -36,44 +36,27 @@ public class PerguntaSN extends Pergunta {
 
     @Override
     public boolean verificar(String resposta) {
-        //return !"s".equals(resposta) && !"n".equals(resposta);
-        return !(resposta != null && resposta.matches("s|n") && resposta != "");
+        return (resposta != null && resposta.matches("s|n") && resposta != "");
     }
-/*
-    @Override
+
     public void executarPergunta(int numero, Player jogador) {
-        System.out.println(getPerguntas()[numero]);
-        String resposta = super.getTecla().nextLine().toLowerCase().trim();
-        while (verificar(resposta)) {
-            System.out.println("");
-            System.out.println("Resposta Invalida! Digite somente [s] ou [n].");
+        String resposta = null;
+        try {
             System.out.println(getPerguntas()[numero]);
+            System.out.println("Responda com [s] para sim e [n] para não.");
+            System.out.print("Resposta: ");
             resposta = super.getTecla().nextLine().toLowerCase().trim();
+            verificarErro(resposta, 's');
+            System.out.println("");
+        } catch (RespostaInvalidaException ex) {
+            System.out.println("");
+            System.out.println(ex.getMessage());
+            executarPergunta(numero, jogador);
         }
-        System.out.println("");
         checarResposta(numero, resposta, jogador);
     }
-*/
-    
-    public void executarPergunta(int numero, Player jogador) {
-       String resposta = null;
-        do {            
-            try {
-                System.out.println(getPerguntas()[numero]);
-                System.out.println("Responda com [s] para sim e [n] para não.");
-                System.out.print("Resposta: ");
-                resposta = super.getTecla().nextLine().toLowerCase().trim();
-                verificarErro(resposta, "sn");
-                System.out.println("");
-            } catch (RespostaInvalidaException ex) {
-                System.out.println(ex.getMessage());
-                executarPergunta(numero, jogador);
-            }  
 
-        } while (verificar(resposta));
-    }
-    
-    //getters e setters
+    //getters
     public static int getNumeroPerguntas() {
         return N_PERGUNTAS;
     }
