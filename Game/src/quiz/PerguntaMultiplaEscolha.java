@@ -49,9 +49,22 @@ public class PerguntaMultiplaEscolha extends Pergunta {
                 + "e)Mudilose\n";
         respostas[2] = "b";
         
-        perguntas[3] = "Aqui vai uma pergunta\n"
-                + "aqui vai as alternativas";
+        perguntas[3] = "Qual das empresa a seguir é a mais poluente?\n"
+                + "a)Coca-Cola\n"
+                + "b)PepsiCo\n"
+                + "c)Nestlé\n"
+                + "d)Unilever\n"
+                + "e)P&G\n";
         respostas[3] = "a";
+        
+        perguntas[4] = "Apesar dos comercias de ursos polares felizes a Coca-Cola causa um mal aos nossos amigos brancos.\n"
+                + "O texto acima se refere ao: \n"
+                + "a)Quebra da camada de ozônio\n"
+                + "b)Aquecimento global\n"
+                + "c)Dano nos lençois freáticos\n"
+                + "d)Destruição do clima\n"
+                + "e)Uso abosivo de sua imagem sendo que os ursos não são pagos\n";
+        respostas[4] = "b";
     }
 
     @Override

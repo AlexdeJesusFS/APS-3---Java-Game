@@ -33,8 +33,11 @@ public class PerguntaComplexa extends Pergunta {
     public void checarResposta(int numeroPergunta, String resposta, Player jogador) {
         if (respostas[numeroPergunta].equals(resposta.toLowerCase().trim())) {
             jogador.adicionaPontos();
+            System.out.println("Parábens você conseguiu! Acertou todas em sequência.");
         } else {
             jogador.retiraPontos();
+            System.out.println("Nem todas as suas decisões foram corretas.");
+            System.out.println("");
         }
     }
 
@@ -190,34 +193,34 @@ public class PerguntaComplexa extends Pergunta {
         respostas[] = "";
          */
 
-        //-Primeiro enunciado-
+        //-Primeiro enunciado- Pergunta 0
         perguntaIni[0][0] = "Voce entra em uma floresta e se encontra com um urso, ao perceber que ele te viu voce _____.";
         //-opcoes-
-        perguntaIni[0][1] = "a)Corre.";
+        perguntaIni[0][1] = "a)Gritar com ele.";
         perguntaIni[0][2] = "b)Chama a policia.";
         perguntaIni[0][3] = "c)Brinca com ele.";
-        perguntaIni[0][4] = "d)Chama de toto.";
+        perguntaIni[0][4] = "d)Se afasta devagar.";
         perguntaIni[0][5] = "e)O pede para respeitar seu espaco pessoal.";
         //-Segundo Enunciado-
-        perguntaMeio[0][0] = " \nApos isso e necessario tomar mais uma acao: _____.";
+        perguntaMeio[0][0] = " \nEle começa a se aproxiamr, o que você faz é _____.";
         //-opcoes do segundo-
-        perguntaMeio[0][1] = "a)Fugir de casa.";
+        perguntaMeio[0][1] = "a)Fugir.";
         perguntaMeio[0][2] = "b)Dancar com o Urso.";
-        perguntaMeio[0][3] = "c)Chamar ele de gostosa.";
-        perguntaMeio[0][4] = "d)Manter a calma para nao assusta-lo.";
-        perguntaMeio[0][5] = "e)Sobir uma arvore.";
+        perguntaMeio[0][3] = "c)Gritar com ele.";
+        perguntaMeio[0][4] = "d)Usar seu splay anti-urso.";
+        perguntaMeio[0][5] = "e)Sobir em uma arvore.";
         //-terceiro Enunciado-
-        perguntaFim[0][0] = " E para garantir que voce saia dessa situacao com seguranca e necessario por fim _____.";
+        perguntaFim[0][0] = " O urso começa a se irritar, apesar de querer evitar o confronto não há outro jeito e você _____.";
         //-opcoes do terceiro-
-        perguntaFim[0][1] = "a)Rezar por um milagre.";
-        perguntaFim[0][2] = "b)Se afastar do urso sem virar suas costas para ele.";
-        perguntaFim[0][3] = "c)Fingir estar morto.";
-        perguntaFim[0][4] = "d)Confundir ele com fotos de animais.";
-        perguntaFim[0][5] = "e)Abraca-lo e pedir desculpas por incomodar.";
+        perguntaFim[0][1] = "a)Corre.";
+        perguntaFim[0][2] = "b)Fica nas pontas do pé, grita e sacudir um galho.";
+        perguntaFim[0][3] = "c)Fingi estar morto.";
+        perguntaFim[0][4] = "d)Confundi ele com fotos de animais.";
+        perguntaFim[0][5] = "e)Abraça-o e pedi desculpas pelo incomodo.";
         //-resposta composta da juncao das 3 letras corretas-
-        respostas[0] = "bdb";
+        respostas[0] = "ddb";
 
-        //-Primeiro enunciado-
+        //-Primeiro enunciado- Pergunta 1
         perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da terra refere-se ao _____.";
         //-opçoes-
         perguntaIni[1][1] = "a)a.";
@@ -244,7 +247,7 @@ public class PerguntaComplexa extends Pergunta {
         //-resposta composta da juncao das 3 letras corretas-
         respostas[1] = "cac";
 
-        //-Primeiro enunciado-
+        //-Primeiro enunciado-Pergunta 2
         perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a agua, se deve principalmente as que provocam aquecimento global _____.";
         //-opçoes-
         perguntaIni[2][1] = "a)a.";
@@ -270,6 +273,33 @@ public class PerguntaComplexa extends Pergunta {
         perguntaFim[2][5] = "e)e.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[2] = "bca";
+        
+        //Pergunta 3
+        perguntaIni[3][0] = "Você está em uma caminhada na floresta quando derrepente uma cobra o pica na perna, você_____.";
+        //-opçoes-
+        perguntaIni[3][1] = "a)Corre atrás de ajuda.";
+        perguntaIni[3][2] = "b)Prender a circulação do sangue do perna.";
+        perguntaIni[3][3] = "c)Chupa sua perna onde está a ferida.";
+        perguntaIni[3][4] = "d)Mantem a calma.";
+        perguntaIni[3][5] = "e)Amputa sua próprio perna.";
+        
+        perguntaMeio[3][0] = " Após isso você _____.";
+        
+        perguntaMeio[3][1] = "a)Corre atrás de ajuda.";
+        perguntaMeio[3][2] = "b)Chupa seu braço onde está a ferida.";
+        perguntaMeio[3][3] = "c)Lava o local da picada com água e sabão.";
+        perguntaMeio[3][4] = "d)Vai dormir.";
+        perguntaMeio[3][5] = "e)Amputa sua próprio perna.";
+        
+        perguntaFim[3][0] = " \nE por fim você irá _____.";
+        
+        perguntaFim[3][1] = "a)Atrás de um soro.";
+        perguntaFim[3][2] = "b)Aperta o local da ferida.";
+        perguntaFim[3][3] = "c)Cortar o local da ferida.";
+        perguntaFim[3][4] = "d)Chupar o local da ferida.";
+        perguntaFim[3][5] = "e)Ligar para seus amados e se despedir.";
+        //resposta correta da 3
+        respostas[3] = "dca";
     }
 
 }

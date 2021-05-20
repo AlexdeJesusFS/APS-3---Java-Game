@@ -39,7 +39,7 @@ public class Player {
         }
     }
 
-    //Geters e Seters 
+    //Geters & Seters 
     public String getNome() {
         return nome;
     }

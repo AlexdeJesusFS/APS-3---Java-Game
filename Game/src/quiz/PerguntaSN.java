@@ -13,6 +13,7 @@ public class PerguntaSN extends Pergunta {
     }
 
     //metodos principais
+    @Override
     public void definirPerguntas() {
         perguntas[0] = "O efeito estufa é um evento decorrente da quebra da camada de ozônio?";
         respostas[0] = "n";
@@ -21,7 +22,7 @@ public class PerguntaSN extends Pergunta {
         respostas[1] = "s";
 
         perguntas[2] = "A floresta amazônica, a maior floresta tropical do mundo, nunca sofreu queimadas e quase não sofre com desmatamento ilegal.\n"
-                + "essa frase está correta?";
+                + "Essa frase está correta?";
         respostas[2] = "n";
     }
 

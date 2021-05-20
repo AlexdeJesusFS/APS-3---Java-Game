@@ -18,11 +18,9 @@ public class Principal {
 
         pm.executarPergunta(0, jogador);
         //jogador.defineResultado();
-        //System.out.println(jogador.getPontuacao());
 
         pc.executarPergunta(0, jogador);
-        jogador.defineResultado();
-        //System.out.println(jogador.getPontuacao());
+        //jogador.defineResultado();
         */
         Gerenciador gen = new Gerenciador();
     }
