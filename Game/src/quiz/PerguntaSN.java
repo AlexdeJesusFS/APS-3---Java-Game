@@ -3,7 +3,7 @@ package quiz;
 public class PerguntaSN extends Pergunta {
 
     //atributos
-    private static final int N_PERGUNTAS = 3;
+    private static final int N_PERGUNTAS = 5;
     private final String[] perguntas = new String[N_PERGUNTAS];
     private String[] respostas = new String[N_PERGUNTAS];
 
@@ -24,6 +24,20 @@ public class PerguntaSN extends Pergunta {
         perguntas[2] = "A floresta amazônica, a maior floresta tropical do mundo, nunca sofreu queimadas e quase não sofre com desmatamento ilegal.\n"
                 + "Essa frase está correta?";
         respostas[2] = "n";
+        
+        perguntas[3] = "É correto afirma que no Brasil temos mais de um decimo de toda a água potável do mundo?";
+        respostas[3] = "s";
+        
+        perguntas[4] = "Em muitos lugares os hormônios femininos da pílula anticoncepcional liberados na água através dos \n"
+                + "esgotos estão transformando peixes, repteis e anfíbios machos em fêmeas. Essa informação é verdadeira?";
+        respostas[4] = "s";
+        
+        perguntas[5] = "Entre as várias consequências que o aquecimento global pode trazer uma delas é o aumento da atividade vulcânica,\n"
+                + " o que pode desencadear diversas erupções por todo o mundo e o cobrindo de cinzas.\n"
+                + "Você concorda com essa afirmação?";
+        respostas[5] = "n";
+        
+        
     }
 
     @Override

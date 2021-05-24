@@ -2,7 +2,7 @@ package quiz;
 
 public class PerguntaNumerica extends Pergunta {
 
-    private static final int N_PERGUNTAS = 5;
+    private static final int N_PERGUNTAS = 4;
     private String[] perguntas = new String[N_PERGUNTAS];
     private int[] respostas = new int[N_PERGUNTAS];
 

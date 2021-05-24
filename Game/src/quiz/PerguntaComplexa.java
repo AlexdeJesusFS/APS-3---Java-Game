@@ -3,7 +3,7 @@ package quiz;
 public class PerguntaComplexa extends Pergunta {
 
     //atributos
-    private static final int N_PERGUNTAS = 3;
+    private static final int N_PERGUNTAS = 4;
     private final String[][] perguntaIni = new String[super.getQtdPerguntas()][6];
     private final String[][] perguntaMeio = new String[super.getQtdPerguntas()][6];
     private final String[][] perguntaFim = new String[super.getQtdPerguntas()][6];
@@ -213,7 +213,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaFim[0][0] = " O urso começa a se irritar, apesar de querer evitar o confronto não há outro jeito e você _____.";
         //-opcoes do terceiro-
         perguntaFim[0][1] = "a)Corre.";
-        perguntaFim[0][2] = "b)Fica nas pontas do pé, grita e sacudir um galho.";
+        perguntaFim[0][2] = "b)Fica nas pontas do pé, grita e sacudi um galho.";
         perguntaFim[0][3] = "c)Fingi estar morto.";
         perguntaFim[0][4] = "d)Confundi ele com fotos de animais.";
         perguntaFim[0][5] = "e)Abraça-o e pedi desculpas pelo incomodo.";
@@ -300,6 +300,42 @@ public class PerguntaComplexa extends Pergunta {
         perguntaFim[3][5] = "e)Ligar para seus amados e se despedir.";
         //resposta correta da 3
         respostas[3] = "dca";
+        
+        //Pergunta 4
+        perguntaIni[4][0] = "No Brasil ocorreu um grande evento, no qual se reunirão lideres de 156 países e 56 representantes\n"
+                + "de todo o mundo para debater sobre a necessidade de conciliar o desenvolvimento socio econômico com a \n"
+                + "utilização dos recursos naturais. Essa reunião ficou conhecida como _____.";
+        //-opçoes-
+        perguntaIni[4][1] = "a)Rio82.";
+        perguntaIni[4][2] = "b)Rio92.";
+        perguntaIni[4][3] = "c)Eco.";
+        perguntaIni[4][4] = "d)Reunião sobre o desenvolvimento e os recursos naturais.";
+        perguntaIni[4][5] = "e)Rio++..";
+        
+        perguntaMeio[4][0] = "\nOutro envento sobre as questões do meio ambiente foi o Protocolo de Kyoto, em Kyoto no Japão, em \n"
+                + "1997, que foi assinado pelos países integrantes da ONU. O que o protocola visava era a(o) _____.";
+        
+        perguntaMeio[4][1] = "a)Redução da emissão de gases do efeito estufa.";
+        perguntaMeio[4][2] = "b)Reflorestamento.";
+        perguntaMeio[4][3] = "c)Procura do Godzilla.";
+        perguntaMeio[4][4] = "d)Extinção da fome.";
+        perguntaMeio[4][5] = "e)Cura do câncer.";
+        
+        perguntaFim[4][0] = "\nAlém dessa reunião houveram outras como a conferência de Paris que abordou assuntos sobre o meio \n"
+                + "ambiente também. Nem todos os países do mundo adentaram ao acordo de Paris, como foi o caso da Síria que estava \n"
+                + "em guerra e de outros países que não participaram por escolha, entre eles está a(o) _____.";
+
+        perguntaFim[4][1] = "a)Chile.";
+        perguntaFim[4][2] = "b)Groelândia.";
+        perguntaFim[4][3] = "c)Rússia.";
+        perguntaFim[4][4] = "d)Australia.";
+        perguntaFim[4][5] = "e)Afica do sul.";
+        //-resposta composta da juncao das 3 letras corretas-
+        respostas[4] = "bac";
+        
+        
+        
+        
     }
 
 }

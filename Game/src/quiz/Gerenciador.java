@@ -15,7 +15,7 @@ public class Gerenciador {
     public void menuInicial(Scanner tecla) {
         System.out.println("Bem vindo ao Quiz Green!!!\n"
                 + "\n-Regras-\n"
-                + "Voce respondera 10 perguntas aletorias dos diferentes tipos de pergunta existentes\n"
+                + "Você respondera 10 perguntas aletorias dos diferentes tipos de pergunta existentes\n"
                 + "para cada acerto 10 pontos serao adicionados ao seu score, a cada erro 10 pontos serao retirados\n"
                 + "apos as 10 pertuntas o seu resultado sera apresentado na tela.\n\n"
                 + "Digite [s] para prosseguir ou [n] para fechar o jogo.");
