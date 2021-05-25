@@ -1,4 +1,4 @@
-package quiz_v3;
+package quiz;
 
 public class Player {
 
@@ -18,28 +18,28 @@ public class Player {
     }
 
     //Principal:
-    public void adicionaPontos() {
-        setPontuacao(getPontuacao() + 10);
+    public void adicionaPontos(int pontos) {
+        setPontuacao(getPontuacao() + pontos);
     }
 
-    public void retiraPontos() {
-        setPontuacao(getPontuacao() - 10);
+    public void retiraPontos(int pontos) {
+        setPontuacao(getPontuacao() - pontos);
     }
 
     public void defineResultado() {
         System.out.println("Sua pontuacao foi de " + getPontuacao() + " pontos.");
         if (getPontuacao() < 0) {
-            System.out.println(nome + ", seu resultado é pior do que jamais esperavamos, não ouse nem sair de casa você é um risco.");
+            System.out.println(nome + ", seu resultado é pior do que jamais esperávamos, não ouse nem sair de casa você é um risco.");
         } else if (getPontuacao() >= 0 && getPontuacao() <= 30) {
             System.out.println("Seu resultado foi mediano " + nome + ", ainda há muitas coisas para aprender sobre a natureza.");
         } else if (getPontuacao() > 30 && getPontuacao() != 100) {
-            System.out.println("Ótimo resultado " + nome + ", cometeu alguns erros mas está muito bem em seus conhecimetos sobre a natureza");
+            System.out.println("Ótimo resultado " + nome + ", cometeu alguns erros, mas está muito bem em seus conhecimentos sobre a natureza.");
         } else {
-            System.out.println("Muito bem, meus parábens, " + nome + ", você é incrivel não há nada para ser ensinado a você aqui.");
+            System.out.println("Muito bem, meus parábens, " + nome + ", você é incrível não há nada para ser ensinado a você aqui.");
         }
     }
 
-    //Geters e Seters 
+    //Geters & Seters 
     public String getNome() {
         return nome;
     }
