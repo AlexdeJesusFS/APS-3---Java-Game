@@ -25,14 +25,14 @@ public class PerguntaSN extends Pergunta {
                 + "Essa frase está correta?";
         respostas[2] = "n";
         
-        perguntas[3] = " correto afirma que no Brasil temos mais de um decimo de toda a Ã¡gua potÃ¡vel do mundo?";
+        perguntas[3] = " correto afirma que no Brasil temos mais de um decimo de toda a água potável do mundo?";
         respostas[3] = "s";
         
-        perguntas[4] = "Em muitos lugares os hormônios femininos da pílula anticoncepcional liberados na Ã¡gua através dos \n"
+        perguntas[4] = "Em muitos lugares os hormônios femininos da pílula anticoncepcional liberados na água através dos \n"
                 + "esgotos estão transformando peixes, repteis e anfíbios machos em fêmeas. Essa informação é verdadeira?";
         respostas[4] = "s";
         
-        perguntas[5] = "Entre as vÃ¡rias consequências que o aquecimento global pode trazer uma delas é o aumento da atividade vulcânica,\n"
+        perguntas[5] = "Entre as várias consequências que o aquecimento global pode trazer uma delas é o aumento da atividade vulcânica,\n"
                 + " o que pode desencadear diversas erupções por todo o mundo e o cobrindo de cinzas.\n"
                 + "Você concorda com essa afirmação?";
         respostas[5] = "n";

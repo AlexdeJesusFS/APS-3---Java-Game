@@ -4,10 +4,10 @@ public class PerguntaComplexa extends Pergunta {
 
     //atributos
     private static final int N_PERGUNTAS = 10;
-    private final String[][] perguntaIni = new String[super.getQtdPerguntas()][6];
-    private final String[][] perguntaMeio = new String[super.getQtdPerguntas()][6];
-    private final String[][] perguntaFim = new String[super.getQtdPerguntas()][6];
-    private final String[] respostas = new String[super.getQtdPerguntas()];
+    private final String[][] perguntaIni = new String[N_PERGUNTAS][6];
+    private final String[][] perguntaMeio = new String[N_PERGUNTAS][6];
+    private final String[][] perguntaFim = new String[N_PERGUNTAS][6];
+    private final String[] respostas = new String[N_PERGUNTAS];
 
     //construtor
     public PerguntaComplexa() {
@@ -196,7 +196,7 @@ public class PerguntaComplexa extends Pergunta {
         */
 
     	//-Primeiro enunciado- Pergunta 0
-        perguntaIni[0][0] = "Voce entra em uma floresta e se encontra com um urso, ao perceber que ele te viu voce _____.";
+        perguntaIni[0][0] = "Você entra em uma floresta e se encontra com um urso, ao perceber que ele te viu você _____.";
         //-opcoes-
         perguntaIni[0][1] = "a)Gritar com ele.";
         perguntaIni[0][2] = "b)Chama a policia.";
@@ -212,7 +212,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaMeio[0][4] = "d)Usar seu splay anti-urso.";
         perguntaMeio[0][5] = "e)Sobir em uma arvore.";
         //-terceiro Enunciado-
-        perguntaFim[0][0] = " O urso começa a se irritar, apesar de querer evitar o confronto não há outro jeito e você _____.";
+        perguntaFim[0][0] = " O urso começa a se irritar, apesar de querer evitar isso não há outro jeito e você _____.";
         //-opcoes do terceiro-
         perguntaFim[0][1] = "a)Corre.";
         perguntaFim[0][2] = "b)Fica nas pontas do pé, grita e sacudi um galho.";
@@ -223,7 +223,7 @@ public class PerguntaComplexa extends Pergunta {
         respostas[0] = "ddb";
 
         //-Primeiro enunciado- Pergunta 1
-        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da terra refere-se ao(a) _____.";
+        perguntaIni[1][0] = "O fenômeno anormal do aumento de temperatura da terra refere-se ao(a) _____.";
         //-opçoes-
         perguntaIni[1][1] = "a)Atividade vulcânica.";
         perguntaIni[1][2] = "b)Quebra da camada de ozônio.";
@@ -231,7 +231,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[1][4] = "d)Furacões.";
         perguntaIni[1][5] = "e)Tempestades solares.";
         //-Segundo Enunciado-
-        perguntaMeio[1][0] = " \nEste fenomeno ocorre devido a _____.";
+        perguntaMeio[1][0] = " \nEste fenômeno ocorre devido a _____.";
         //-opções do segundo-
         perguntaMeio[1][1] = "a)Produção exagerada e acumulo de gases poluentes na atmosfera terrestre.";
         perguntaMeio[1][2] = "b)b.";
@@ -241,16 +241,16 @@ public class PerguntaComplexa extends Pergunta {
         //-terceiro Enunciado-
         perguntaFim[1][0] = " \nO principal gás resposável por esse fenômeno é o _____.";
         //-opcoes do terceiro-
-        perguntaFim[1][1] = "a)a.";
-        perguntaFim[1][2] = "b)b.";
+        perguntaFim[1][1] = "a)Gás carbonico.";
+        perguntaFim[1][2] = "b)Gás de cozinha.";
         perguntaFim[1][3] = "c)Dioxido de carbono.";
-        perguntaFim[1][4] = "d)d.";
-        perguntaFim[1][5] = "e)e.";
+        perguntaFim[1][4] = "d)Gás élio.";
+        perguntaFim[1][5] = "e)Gás natural.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[1] = "cac";
 
         //-Primeiro enunciado-Pergunta 2
-        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a agua, se deve principalmente as que provocam aquecimento global _____.";
+        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a água, se deve principalmente as que provocam aquecimento global _____.";
         //-opçoes-
         perguntaIni[2][1] = "a)a.";
         perguntaIni[2][2] = "b)Ações humanas.";
@@ -258,7 +258,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[2][4] = "d)d.";
         perguntaIni[2][5] = "e)e.";
         //-Segundo Enunciado-
-        perguntaMeio[2][0] = " As princiapais acoes causadas pelo homem, que intencificam os problemas atmosfericos no planeta são _____.";
+        perguntaMeio[2][0] = " As princiapais ações causadas pelo homem, que intencificam os problemas atmosfericos no planeta são _____.";
         //-opções do segundo-
         perguntaMeio[2][1] = "a)a.";
         perguntaMeio[2][2] = "b)b.";
@@ -266,7 +266,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaMeio[2][4] = "d)d.";
         perguntaMeio[2][5] = "e)e.";
         //-terceiro Enunciado-
-        perguntaFim[2][0] = " \nComo consequencias das acoes humanas podemos constatar que o aquecimento global provoca _____.";
+        perguntaFim[2][0] = " \nComo consequências das ações humanas podemos constatar que o aquecimento global provoca _____.";
         //-opcoes do terceiro-
         perguntaFim[2][1] = "a)Extenção agricula e dos recurso naturais, devastação climatica e altas dos oceanos.";
         perguntaFim[2][2] = "b)b.";
@@ -280,7 +280,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[3][0] = "Você está em uma caminhada na floresta quando derrepente uma cobra o pica na perna, você_____.";
         //-opçoes-
         perguntaIni[3][1] = "a)Corre atrás de ajuda.";
-        perguntaIni[3][2] = "b)Prender a circulação do sangue do perna.";
+        perguntaIni[3][2] = "b)Prender a circulação do sangue da perna.";
         perguntaIni[3][3] = "c)Chupa sua perna onde está a ferida.";
         perguntaIni[3][4] = "d)Mantem a calma.";
         perguntaIni[3][5] = "e)Amputa sua próprio perna.";
@@ -288,7 +288,7 @@ public class PerguntaComplexa extends Pergunta {
         perguntaMeio[3][0] = " Após isso você _____.";
         
         perguntaMeio[3][1] = "a)Corre atrás de ajuda.";
-        perguntaMeio[3][2] = "b)Chupa seu braço onde está a ferida.";
+        perguntaMeio[3][2] = "b)Faz exercícios físicos.";
         perguntaMeio[3][3] = "c)Lava o local da picada com água e sabão.";
         perguntaMeio[3][4] = "d)Vai dormir.";
         perguntaMeio[3][5] = "e)Amputa sua próprio perna.";
@@ -336,56 +336,56 @@ public class PerguntaComplexa extends Pergunta {
         respostas[4] = "bac";
         
         //Pergunta 5
-        perguntaIni[5][0] = "O _____ é o fenômeno atmosférico benéfico e natural do planeta, responsável em retercalor e manter a temperatura adequada e suportável ao ambiente terrestre.";
+        perguntaIni[5][0] = "O _____ é o fenômeno atmosférico benéfico e natural do planeta, responsável em reter calor e manter a temperatura adequada e suportável ao ambiente terrestre.";
         //-opçoes-
-        perguntaIni[5][1] = "a) Aquecimento global.";
-        perguntaIni[5][2] = "b) Impacto ambiental.";
-        perguntaIni[5][3] = "c) Meio ambiente.";
-        perguntaIni[5][4] = "d) Efeito estufa.";
-        perguntaIni[5][5] = "e) Ações humanas.";
+        perguntaIni[5][1] = "a)Aquecimento global.";
+        perguntaIni[5][2] = "b)Impacto ambiental.";
+        perguntaIni[5][3] = "c)Meio ambiente.";
+        perguntaIni[5][4] = "d)Efeito estufa.";
+        perguntaIni[5][5] = "e)Ações humanas.";
         //-Segundo Enunciado-
         perguntaMeio[5][0] = "Os gases que afetam o efeito estufa são:";
         //-opções do segundo- 
-        perguntaMeio[5][1] = "a) gás de cozinha.";
-        perguntaMeio[5][2] = "b) gás carbonico,metano,enxofre, e os derivados do petróleo.";
-        perguntaMeio[5][3] = "c) gás oxigênio.";
-        perguntaMeio[5][4] = "d) gás.";
-        perguntaMeio[5][5] = "e) gases humanos (pum).";
+        perguntaMeio[5][1] = "a)gás de cozinha.";
+        perguntaMeio[5][2] = "b)gás carbonico,metano,enxofre, e os derivados do petróleo.";
+        perguntaMeio[5][3] = "c)gás oxigênio.";
+        perguntaMeio[5][4] = "d)gás.";
+        perguntaMeio[5][5] = "e)gases humanos (pum).";
         //-terceiro Enunciado-
-        perguntaFim[5][0] = "Alguns países afetam mais o efeito estufa que os outros, então podemos dizer que_____ são os maiores responsáveis pela piora deste fenômeno";
+        perguntaFim[5][0] = "Alguns países afetam mais o efeito estufa que os outros, então podemos dizer que _____ são os maiores responsáveis pela piora deste fenômeno";
         //-opcoes do terceiro-
-        perguntaFim[5][1] = "a) Países turísticos.";
-        perguntaFim[5][2] = "b) Fenômenos naturais.";
-        perguntaFim[5][3] = "c) Impacto na pecuária.";
-        perguntaFim[5][4] = "d) Os países com mais industrias e com intensiva prática de queimadas .";
-        perguntaFim[5][5] = "e) Aquecimento global.";
+        perguntaFim[5][1] = "a)Países turísticos.";
+        perguntaFim[5][2] = "b)Fenômenos naturais.";
+        perguntaFim[5][3] = "c)Impacto na pecuária.";
+        perguntaFim[5][4] = "d)Os países com mais industrias e com intensiva prática de queimadas .";
+        perguntaFim[5][5] = "e)Aquecimento global.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[5] = "dbd";
         
         //Pergunta 6
-        perguntaIni[6][0] = "“A coleta seletiva é o procedimento de recolhimento de materiais recicláveis, ela é facilmente reconhecida por 4 lixeiras coloridas que recolhem respectivamente: \\npapel, ___”";
+        perguntaIni[6][0] = "“A coleta seletiva é o procedimento de recolhimento de materiais recicláveis, ela é facilmente reconhecida por 4 lixeiras coloridas que recolhem respectivamente: \npapel, ___”";
         //-opçoes-
-        perguntaIni[6][1] = "a)  Plástico.";
-        perguntaIni[6][2] = "b) Folhas.";
-        perguntaIni[6][3] = "c)  Animais.";
-        perguntaIni[6][4] = "d)  Restos de Comida.";
-        perguntaIni[6][5] = "e) Balas de goma.";
+        perguntaIni[6][1] = "a)Plástico.";
+        perguntaIni[6][2] = "b)Folhas.";
+        perguntaIni[6][3] = "c)Animais.";
+        perguntaIni[6][4] = "d)Restos de Comida.";
+        perguntaIni[6][5] = "e)Balas de goma.";
         //-Segundo Enunciado-
         perguntaMeio[6][0] = "";
         //-opções do segundo-
-        perguntaMeio[6][1] = "a) Pedras.";
-        perguntaMeio[6][2] = "b) Areia.";
-        perguntaMeio[6][3] = "c) Metal.";
-        perguntaMeio[6][4] = "d)  Urânio.";
-        perguntaMeio[6][5] = "e) Gemas.";
+        perguntaMeio[6][1] = "a)Pedras.";
+        perguntaMeio[6][2] = "b)Areia.";
+        perguntaMeio[6][3] = "c)Metal.";
+        perguntaMeio[6][4] = "d)Urânio.";
+        perguntaMeio[6][5] = "e)Gemas.";
         //-terceiro Enunciado-
         perguntaFim[6][0] = "";
         //-opcoes do terceiro-
-        perguntaFim[6][1] = "a) Cristais.";
-        perguntaFim[6][2] = "b)  Diamantes.";
-        perguntaFim[6][3] = "c) Madeira.";
-        perguntaFim[6][4] = "d) Insetos.";
-        perguntaFim[6][5] = "e) Vidro.";
+        perguntaFim[6][1] = "a)Cristais.";
+        perguntaFim[6][2] = "b)Diamantes.";
+        perguntaFim[6][3] = "c)Madeira.";
+        perguntaFim[6][4] = "d)Insetos.";
+        perguntaFim[6][5] = "e)Vidro.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[6] = "ace";
         
@@ -393,80 +393,80 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[7][0] = "Dentre os tipos de poluição que afetam o meio ambiente se destacam:\n"
         		+ "A poluição _____ que ocorre pela emissão de poluentes no ar. ";
         //-opçoes-
-        perguntaIni[7][1] = "a) Estratosférica.";
-        perguntaIni[7][2] = "b) Astronômica.";
-        perguntaIni[7][3] = "c) Aérea. .";
-        perguntaIni[7][4] = "d)  Atmosférica..";
-        perguntaIni[7][5] = "e) Monótona..";
+        perguntaIni[7][1] = "a)Estratosférica.";
+        perguntaIni[7][2] = "b)Astronômica.";
+        perguntaIni[7][3] = "c)Aérea.";
+        perguntaIni[7][4] = "d)Atmosférica.";
+        perguntaIni[7][5] = "e)Monótona.";
         //-Segundo Enunciado-
-        perguntaMeio[7][0] = "\\nA poluição _____ que ocorre principalmente pela contaminação ou poluição generalizada da terra.";
+        perguntaMeio[7][0] = "\nA poluição _____ que ocorre principalmente pela contaminação ou poluição generalizada da terra.";
         //-opções do segundo-
-        perguntaMeio[7][1] = "a) Sonora.";
-        perguntaMeio[7][2] = "b) Bovina.";
-        perguntaMeio[7][3] = "c) Dos solos..";
-        perguntaMeio[7][4] = "d) Solar.";
-        perguntaMeio[7][5] = "e) Marítima..";
+        perguntaMeio[7][1] = "a)Sonora.";
+        perguntaMeio[7][2] = "b)Bovina.";
+        perguntaMeio[7][3] = "c)Dos solos.";
+        perguntaMeio[7][4] = "d)Solar.";
+        perguntaMeio[7][5] = "e)Marítima.";
         //-terceiro Enunciado-
-        perguntaFim[7][0] = "\\nA poluição _____ que ocorre pela degradação de recursos hídricos.";
+        perguntaFim[7][0] = "\nA poluição _____ que ocorre pela degradação de recursos hídricos.";
         //-opcoes do terceiro-
-        perguntaFim[7][1] = "a) Flutuante..";
-        perguntaFim[7][2] = "b) Degradante..";
-        perguntaFim[7][3] = "c) Visual..";
-        perguntaFim[7][4] = "d) Terrestre.";
-        perguntaFim[7][5] = "e) Das águas..";
+        perguntaFim[7][1] = "a)Flutuante.";
+        perguntaFim[7][2] = "b)Degradante.";
+        perguntaFim[7][3] = "c)Visual.";
+        perguntaFim[7][4] = "d)Terrestre.";
+        perguntaFim[7][5] = "e)Das águas.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[7] = "dce";
         
         //Pergunta 8 
         perguntaIni[8][0] = "O uso de certos tipos de _____ para combater as pragas em lavouras pode gerar a poluição dos solos.";
         //-opçoes-
-        perguntaIni[8][1] = "a) Animais..";
-        perguntaIni[8][2] = "b) Agrotóxicos.";
-        perguntaIni[8][3] = "c) Mangueiras..";
-        perguntaIni[8][4] = "d) Chapéis..";
-        perguntaIni[8][5] = "e) Frascos..";
+        perguntaIni[8][1] = "a)Animais.";
+        perguntaIni[8][2] = "b)Agrotóxicos.";
+        perguntaIni[8][3] = "c)Mangueiras.";
+        perguntaIni[8][4] = "d)Chapéis.";
+        perguntaIni[8][5] = "e)Frascos.";
         //-Segundo Enunciado-
         perguntaMeio[8][0] = "O excesso de _____ tóxicos no solo pode causar a infertilidade do mesmo";
         //-opções do segundo-
-        perguntaMeio[8][1] = "a) Humanos.";
-        perguntaMeio[8][2] = "b) Sorvetes..";
-        perguntaMeio[8][3] = "c) Resíduos..";
-        perguntaMeio[8][4] = "d) Besouros..";
-        perguntaMeio[8][5] = "e) Sapatos.";
+        perguntaMeio[8][1] = "a)Humanos.";
+        perguntaMeio[8][2] = "b)Sorvetes..";
+        perguntaMeio[8][3] = "c)Resíduos..";
+        perguntaMeio[8][4] = "d)Besouros..";
+        perguntaMeio[8][5] = "e)Sapatos.";
         //-terceiro Enunciado-
         perguntaFim[8][0] = "E por isso o uso de _____ é preferível para saúde do solo.";
         //-opcoes do terceiro-
-        perguntaFim[8][1] = "a) Adubos orgânicos..";
-        perguntaFim[8][2] = "b) Cavalos.";
-        perguntaFim[8][3] = "c)  Laranjas.";
-        perguntaFim[8][4] = "d) Animais domésticos..";
-        perguntaFim[8][5] = "e) Agrotóxicos.";
+        perguntaFim[8][1] = "a)Adubos orgânicos..";
+        perguntaFim[8][2] = "b)Cavalos.";
+        perguntaFim[8][3] = "c)Laranjas.";
+        perguntaFim[8][4] = "d)Animais domésticos..";
+        perguntaFim[8][5] = "e)Agrotóxicos.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[9] = "bca";
         
         //Pergunta 9 
         perguntaIni[9][0] = "Dentre os materiais presentes no lixo urbano a borracha, o _____ e o plástico são os que se destacam pelo tempo que demoram para se decompor.";
-        perguntaIni[9][1] = "a) espelho.";
-        perguntaIni[9][2] = "b) papel.";
-        perguntaIni[9][3] = "c) cadarço.";
-        perguntaIni[9][4] = "d) papelão.";
-        perguntaIni[9][5] = "e)  vidro.";
+        perguntaIni[9][1] = "a)espelho.";
+        perguntaIni[9][2] = "b)papel.";
+        perguntaIni[9][3] = "c)cadarço.";
+        perguntaIni[9][4] = "d)papelão.";
+        perguntaIni[9][5] = "e)vidro.";
         //-Segundo Enunciado-
-        perguntaMeio[9][0] = "\nDentre eles o __ é um dos de maior impacto nas mortes dos animais marinhos.";
+        perguntaMeio[9][0] = "\nDentre eles o _____ é um dos de maior impacto nas mortes dos animais marinhos.";
         //-opções do segundo-
-        perguntaMeio[9][1] = "a) cadarço.";
-        perguntaMeio[9][2] = "b) plástico.";
-        perguntaMeio[9][3] = "c) vidro.";
-        perguntaMeio[9][4] = "d) carvão.";
-        perguntaMeio[9][5] = "e) lítio.";
+        perguntaMeio[9][1] = "a)cadarço.";
+        perguntaMeio[9][2] = "b)plástico.";
+        perguntaMeio[9][3] = "c)vidro.";
+        perguntaMeio[9][4] = "d)carvão.";
+        perguntaMeio[9][5] = "e)lítio.";
         //-terceiro Enunciado-
-        perguntaFim[9][0] = "estes dados destacam a importância da ___ na preservação do ambiente." ;
+        perguntaFim[9][0] = "estes dados destacam a importância da _____ na preservação do ambiente." ;
         //-opcoes do terceiro-
-        perguntaFim[9][1] = "a) reciclagem.";
-        perguntaFim[9][2] = "b) termodinâmica.";
-        perguntaFim[9][3] = "c) queimada.";
-        perguntaFim[9][4] = "d) poluição.";
-        perguntaFim[9][5] = "e) amostra de animais.";
+        perguntaFim[9][1] = "a)reciclagem.";
+        perguntaFim[9][2] = "b)termodinâmica.";
+        perguntaFim[9][3] = "c)queimada.";
+        perguntaFim[9][4] = "d)poluição.";
+        perguntaFim[9][5] = "e)amostra de animais.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[9] = "eba";
         

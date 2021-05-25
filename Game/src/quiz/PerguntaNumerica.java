@@ -13,9 +13,9 @@ public class PerguntaNumerica extends Pergunta {
 
     @Override
     public void definirPerguntas() {
-    	perguntas[0] = "Devido as grandes queimadas que ocorreram na Amozonia um fenomeno nao muito \n"
+    	perguntas[0] = "Devido as grandes queimadas que ocorreram na Amozônia um fenomeno nao muito \n"
                 + "comum ocorreu em Sao Paulo, a chuva negra. Em que ano isso aconteceu?\n"
-                + "Digite o ano. ";
+                + "Digite o ano. \n";
         respostas[0] = 2019;
 
         perguntas[1] = "Um dos primeiros atos dos portugueses que por aqui chegaram foi abater uma árvore para montar \n"
@@ -23,7 +23,7 @@ public class PerguntaNumerica extends Pergunta {
                 + "primeira vítima há muitos anos. Nos cinco séculos que se seguiram, cada novo ciclo econômico de \n"
                 + "desenvolvimento do país significou mais um passo na destruição de uma floresta de um milhão de quilô-\n"
                 + "metros quadrados, hoje reduzida a vestígios. Em que ano os portiguese chegaram aqui no Brasil?\n"
-                + "Digite o ano. ";
+                + "Digite o ano. \n";
         respostas[1] = 1500;
 
         perguntas[2] = "Os incêndios florestais na Austrália são recorrentes. Eles acontecem todos os anos no final do \n"
@@ -37,7 +37,7 @@ public class PerguntaNumerica extends Pergunta {
                 + "energia para as máquinas, o aumento das doenças e acidentes de trabalhos por função das péssimas \n"
                 + "condições de trabalho e ainda, o uso da mão de obra infantil.\n"
                 + "Em que século inicio-se a primeira revolução industrial.\n"
-                + "Digite o século em formato númerico. ";
+                + "Digite o século em formato númerico. \n";
         respostas[3] = 18;
 
         perguntas[4] = "A ONU decidiu inaugurar a primeira grande conferência mundial sobre o meio ambiente\n"
