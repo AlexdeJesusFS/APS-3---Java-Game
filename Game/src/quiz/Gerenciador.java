@@ -27,6 +27,7 @@ public class Gerenciador {
             tecla.close();
             fecharJogo();
         } else {
+            System.out.println("");
             System.out.println("***Resposta Inválida***".toUpperCase());
             menuInicial(tecla);
         }
