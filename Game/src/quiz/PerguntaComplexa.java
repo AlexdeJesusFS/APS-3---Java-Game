@@ -3,7 +3,7 @@ package quiz;
 public class PerguntaComplexa extends Pergunta {
 
     //atributos
-    private static final int N_PERGUNTAS = 2;
+    private static final int N_PERGUNTAS = 10;
     private final String[][] perguntaIni = new String[super.getQtdPerguntas()][6];
     private final String[][] perguntaMeio = new String[super.getQtdPerguntas()][6];
     private final String[][] perguntaFim = new String[super.getQtdPerguntas()][6];
@@ -195,41 +195,41 @@ public class PerguntaComplexa extends Pergunta {
         respostas[] = "";
         */
 
-        //-Primeiro enunciado- Pergunta 0
-        perguntaIni[0][0] = "Você entra em uma floresta e se encontra com um urso, ao perceber que ele te viu você _____.";
+    	//-Primeiro enunciado- Pergunta 0
+        perguntaIni[0][0] = "Voce entra em uma floresta e se encontra com um urso, ao perceber que ele te viu voce _____.";
         //-opcoes-
-        perguntaIni[0][1] = "a)Grita com ele.";
-        perguntaIni[0][2] = "b)Chama a polícia.";
+        perguntaIni[0][1] = "a)Gritar com ele.";
+        perguntaIni[0][2] = "b)Chama a policia.";
         perguntaIni[0][3] = "c)Brinca com ele.";
         perguntaIni[0][4] = "d)Se afasta devagar.";
-        perguntaIni[0][5] = "e)O pede para respeitar seu espaço pessoal.";
+        perguntaIni[0][5] = "e)O pede para respeitar seu espaco pessoal.";
         //-Segundo Enunciado-
-        perguntaMeio[0][0] = "\nEle começa a se aproxiamr, o que você faz é _____.";
+        perguntaMeio[0][0] = " \nEle começa a se aproximar, o que você faz é _____.";
         //-opcoes do segundo-
         perguntaMeio[0][1] = "a)Fugir.";
         perguntaMeio[0][2] = "b)Dancar com o Urso.";
         perguntaMeio[0][3] = "c)Gritar com ele.";
         perguntaMeio[0][4] = "d)Usar seu splay anti-urso.";
-        perguntaMeio[0][5] = "e)Sobir em uma árvore.";
+        perguntaMeio[0][5] = "e)Sobir em uma arvore.";
         //-terceiro Enunciado-
-        perguntaFim[0][0] = "\nO urso começa a se irritar, apesar de querer evitar isso não há outro jeito e você _____.";
+        perguntaFim[0][0] = " O urso começa a se irritar, apesar de querer evitar o confronto não há outro jeito e você _____.";
         //-opcoes do terceiro-
         perguntaFim[0][1] = "a)Corre.";
         perguntaFim[0][2] = "b)Fica nas pontas do pé, grita e sacudi um galho.";
         perguntaFim[0][3] = "c)Fingi estar morto.";
         perguntaFim[0][4] = "d)Confundi ele com fotos de animais.";
-        perguntaFim[0][5] = "e)Abraça-o e pedi desculpas pelo incômodo.";
+        perguntaFim[0][5] = "e)Abraça-o e pedi desculpas pelo incomodo.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[0] = "ddb";
-        
+
         //-Primeiro enunciado- Pergunta 1
-        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da Terra refere-se ao _____.";
+        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da terra refere-se ao(a) _____.";
         //-opçoes-
-        perguntaIni[1][1] = "a)a.";
-        perguntaIni[1][2] = "b)b.";
+        perguntaIni[1][1] = "a)Atividade vulcânica.";
+        perguntaIni[1][2] = "b)Quebra da camada de ozônio.";
         perguntaIni[1][3] = "c)Aquecimento global.";
-        perguntaIni[1][4] = "d)d.";
-        perguntaIni[1][5] = "e)e.";
+        perguntaIni[1][4] = "d)Furacões.";
+        perguntaIni[1][5] = "e)Tempestades solares.";
         //-Segundo Enunciado-
         perguntaMeio[1][0] = " \nEste fenomeno ocorre devido a _____.";
         //-opções do segundo-
@@ -250,7 +250,7 @@ public class PerguntaComplexa extends Pergunta {
         respostas[1] = "cac";
 
         //-Primeiro enunciado-Pergunta 2
-        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a água, se deve principalmente as que provocam aquecimento global _____.";
+        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a agua, se deve principalmente as que provocam aquecimento global _____.";
         //-opçoes-
         perguntaIni[2][1] = "a)a.";
         perguntaIni[2][2] = "b)Ações humanas.";
@@ -306,23 +306,23 @@ public class PerguntaComplexa extends Pergunta {
         //Pergunta 4
         perguntaIni[4][0] = "No Brasil ocorreu um grande evento, no qual se reunirão lideres de 156 países e 56 representantes\n"
                 + "de todo o mundo para debater sobre a necessidade de conciliar o desenvolvimento socio econômico com a \n"
-                + "utilização dos recursos naturais. Essa reunião ficou conhecida como _____.";
+                + "utilização dos recursos naturais. Essa reunião ficou conhecida como _____.";//5 underlines
         //-opçoes-
         perguntaIni[4][1] = "a)Rio82.";
         perguntaIni[4][2] = "b)Rio92.";
         perguntaIni[4][3] = "c)Eco.";
         perguntaIni[4][4] = "d)Reunião sobre o desenvolvimento e os recursos naturais.";
-        perguntaIni[4][5] = "e)Rio++.";
+        perguntaIni[4][5] = "e)Rio++..";
         
-        perguntaMeio[4][0] = "\nOutro envento sobre as questões do meio ambiente foi o Protocolo de Kyoto, em Kyoto no Japão, em \n"
-                + "1997, que foi assinado pelos países integrantes da ONU. O que o protocola visava era a(o) _____.";
+        perguntaMeio[4][0] = "\nOutro evento sobre as questões do meio ambiente foi o Protocolo de Kyoto, em Kyoto no Japão, em \n"
+                + "1997, que foi assinado pelos países integrantes da ONU. O que o protocolo visava era a(o) _____.";
         
         perguntaMeio[4][1] = "a)Redução da emissão de gases do efeito estufa.";
         perguntaMeio[4][2] = "b)Reflorestamento.";
         perguntaMeio[4][3] = "c)Procura do Godzilla.";
         perguntaMeio[4][4] = "d)Extinção da fome.";
         perguntaMeio[4][5] = "e)Cura do câncer.";
-       
+        
         perguntaFim[4][0] = "\nAlém dessa reunião houveram outras como a conferência de Paris que abordou assuntos sobre o meio \n"
                 + "ambiente também. Nem todos os países do mundo adentaram ao acordo de Paris, como foi o caso da Síria que estava \n"
                 + "em guerra e de outros países que não participaram por escolha, entre eles está a(o) _____.";
@@ -335,7 +335,140 @@ public class PerguntaComplexa extends Pergunta {
         //-resposta composta da juncao das 3 letras corretas-
         respostas[4] = "bac";
         
+        //Pergunta 5
+        perguntaIni[5][0] = "O _____ é o fenômeno atmosférico benéfico e natural do planeta, responsável em retercalor e manter a temperatura adequada e suportável ao ambiente terrestre.";
+        //-opçoes-
+        perguntaIni[5][1] = "a) Aquecimento global.";
+        perguntaIni[5][2] = "b) Impacto ambiental.";
+        perguntaIni[5][3] = "c) Meio ambiente.";
+        perguntaIni[5][4] = "d) Efeito estufa.";
+        perguntaIni[5][5] = "e) Ações humanas.";
+        //-Segundo Enunciado-
+        perguntaMeio[5][0] = "Os gases que afetam o efeito estufa são:";
+        //-opções do segundo- 
+        perguntaMeio[5][1] = "a) gás de cozinha.";
+        perguntaMeio[5][2] = "b) gás carbonico,metano,enxofre, e os derivados do petróleo.";
+        perguntaMeio[5][3] = "c) gás oxigênio.";
+        perguntaMeio[5][4] = "d) gás.";
+        perguntaMeio[5][5] = "e) gases humanos (pum).";
+        //-terceiro Enunciado-
+        perguntaFim[5][0] = "Alguns países afetam mais o efeito estufa que os outros, então podemos dizer que_____ são os maiores responsáveis pela piora deste fenômeno";
+        //-opcoes do terceiro-
+        perguntaFim[5][1] = "a) Países turísticos.";
+        perguntaFim[5][2] = "b) Fenômenos naturais.";
+        perguntaFim[5][3] = "c) Impacto na pecuária.";
+        perguntaFim[5][4] = "d) Os países com mais industrias e com intensiva prática de queimadas .";
+        perguntaFim[5][5] = "e) Aquecimento global.";
+        //-resposta composta da juncao das 3 letras corretas-
+        respostas[5] = "dbd";
         
+        //Pergunta 6
+        perguntaIni[6][0] = "“A coleta seletiva é o procedimento de recolhimento de materiais recicláveis, ela é facilmente reconhecida por 4 lixeiras coloridas que recolhem respectivamente: \\npapel, ___”";
+        //-opçoes-
+        perguntaIni[6][1] = "a)  Plástico.";
+        perguntaIni[6][2] = "b) Folhas.";
+        perguntaIni[6][3] = "c)  Animais.";
+        perguntaIni[6][4] = "d)  Restos de Comida.";
+        perguntaIni[6][5] = "e) Balas de goma.";
+        //-Segundo Enunciado-
+        perguntaMeio[6][0] = "";
+        //-opções do segundo-
+        perguntaMeio[6][1] = "a) Pedras.";
+        perguntaMeio[6][2] = "b) Areia.";
+        perguntaMeio[6][3] = "c) Metal.";
+        perguntaMeio[6][4] = "d)  Urânio.";
+        perguntaMeio[6][5] = "e) Gemas.";
+        //-terceiro Enunciado-
+        perguntaFim[6][0] = "";
+        //-opcoes do terceiro-
+        perguntaFim[6][1] = "a) Cristais.";
+        perguntaFim[6][2] = "b)  Diamantes.";
+        perguntaFim[6][3] = "c) Madeira.";
+        perguntaFim[6][4] = "d) Insetos.";
+        perguntaFim[6][5] = "e) Vidro.";
+        //-resposta composta da juncao das 3 letras corretas-
+        respostas[6] = "ace";
+        
+        //Perguntas 7
+        perguntaIni[7][0] = "Dentre os tipos de poluição que afetam o meio ambiente se destacam:\n"
+        		+ "A poluição _____ que ocorre pela emissão de poluentes no ar. ";
+        //-opçoes-
+        perguntaIni[7][1] = "a) Estratosférica.";
+        perguntaIni[7][2] = "b) Astronômica.";
+        perguntaIni[7][3] = "c) Aérea. .";
+        perguntaIni[7][4] = "d)  Atmosférica..";
+        perguntaIni[7][5] = "e) Monótona..";
+        //-Segundo Enunciado-
+        perguntaMeio[7][0] = "\\nA poluição _____ que ocorre principalmente pela contaminação ou poluição generalizada da terra.";
+        //-opções do segundo-
+        perguntaMeio[7][1] = "a) Sonora.";
+        perguntaMeio[7][2] = "b) Bovina.";
+        perguntaMeio[7][3] = "c) Dos solos..";
+        perguntaMeio[7][4] = "d) Solar.";
+        perguntaMeio[7][5] = "e) Marítima..";
+        //-terceiro Enunciado-
+        perguntaFim[7][0] = "\\nA poluição _____ que ocorre pela degradação de recursos hídricos.";
+        //-opcoes do terceiro-
+        perguntaFim[7][1] = "a) Flutuante..";
+        perguntaFim[7][2] = "b) Degradante..";
+        perguntaFim[7][3] = "c) Visual..";
+        perguntaFim[7][4] = "d) Terrestre.";
+        perguntaFim[7][5] = "e) Das águas..";
+        //-resposta composta da juncao das 3 letras corretas-
+        respostas[7] = "dce";
+        
+        //Pergunta 8 
+        perguntaIni[8][0] = "O uso de certos tipos de _____ para combater as pragas em lavouras pode gerar a poluição dos solos.";
+        //-opçoes-
+        perguntaIni[8][1] = "a) Animais..";
+        perguntaIni[8][2] = "b) Agrotóxicos.";
+        perguntaIni[8][3] = "c) Mangueiras..";
+        perguntaIni[8][4] = "d) Chapéis..";
+        perguntaIni[8][5] = "e) Frascos..";
+        //-Segundo Enunciado-
+        perguntaMeio[8][0] = "O excesso de _____ tóxicos no solo pode causar a infertilidade do mesmo";
+        //-opções do segundo-
+        perguntaMeio[8][1] = "a) Humanos.";
+        perguntaMeio[8][2] = "b) Sorvetes..";
+        perguntaMeio[8][3] = "c) Resíduos..";
+        perguntaMeio[8][4] = "d) Besouros..";
+        perguntaMeio[8][5] = "e) Sapatos.";
+        //-terceiro Enunciado-
+        perguntaFim[8][0] = "E por isso o uso de _____ é preferível para saúde do solo.";
+        //-opcoes do terceiro-
+        perguntaFim[8][1] = "a) Adubos orgânicos..";
+        perguntaFim[8][2] = "b) Cavalos.";
+        perguntaFim[8][3] = "c)  Laranjas.";
+        perguntaFim[8][4] = "d) Animais domésticos..";
+        perguntaFim[8][5] = "e) Agrotóxicos.";
+        //-resposta composta da juncao das 3 letras corretas-
+        respostas[9] = "bca";
+        
+        //Pergunta 9 
+        perguntaIni[9][0] = "Dentre os materiais presentes no lixo urbano a borracha, o _____ e o plástico são os que se destacam pelo tempo que demoram para se decompor.";
+        perguntaIni[9][1] = "a) espelho.";
+        perguntaIni[9][2] = "b) papel.";
+        perguntaIni[9][3] = "c) cadarço.";
+        perguntaIni[9][4] = "d) papelão.";
+        perguntaIni[9][5] = "e)  vidro.";
+        //-Segundo Enunciado-
+        perguntaMeio[9][0] = "\nDentre eles o __ é um dos de maior impacto nas mortes dos animais marinhos.";
+        //-opções do segundo-
+        perguntaMeio[9][1] = "a) cadarço.";
+        perguntaMeio[9][2] = "b) plástico.";
+        perguntaMeio[9][3] = "c) vidro.";
+        perguntaMeio[9][4] = "d) carvão.";
+        perguntaMeio[9][5] = "e) lítio.";
+        //-terceiro Enunciado-
+        perguntaFim[9][0] = "estes dados destacam a importância da ___ na preservação do ambiente." ;
+        //-opcoes do terceiro-
+        perguntaFim[9][1] = "a) reciclagem.";
+        perguntaFim[9][2] = "b) termodinâmica.";
+        perguntaFim[9][3] = "c) queimada.";
+        perguntaFim[9][4] = "d) poluição.";
+        perguntaFim[9][5] = "e) amostra de animais.";
+        //-resposta composta da juncao das 3 letras corretas-
+        respostas[9] = "eba";
         
         
     }

@@ -3,7 +3,7 @@ package quiz;
 public class PerguntaSN extends Pergunta {
 
     //atributos
-    private static final int N_PERGUNTAS = 6;
+    private static final int N_PERGUNTAS = 10;
     private final String[] perguntas = new String[N_PERGUNTAS];
     private String[] respostas = new String[N_PERGUNTAS];
 
@@ -15,27 +15,39 @@ public class PerguntaSN extends Pergunta {
     //metodos principais
     @Override
     public void definirPerguntas() {
-        perguntas[0] = "O efeito estufa é um evento decorrente da quebra da camada de ozônio?";
+    	perguntas[0] = "O efeito estufa é um evento decorrente da quebra da camada de ozônio?";
         respostas[0] = "n";
 
-        perguntas[1] = "A partir do lixo orgânico é possível produzir energia elétrica?";
+        perguntas[1] = "A partir do lixo orgânico é possivel produzir energia elétrica?";
         respostas[1] = "s";
 
-        perguntas[2] = "A floresta amazônica, a maior floresta tropical do mundo, nunca sofreu queimadas e quase não sofre com desmatamento ilegal.\n"
+        perguntas[2] = "A floresta Amazônica, a maior floresta tropical do mundo, nunca sofreu queimadas e quase não sofre com desmatamento ilegal.\n"
                 + "Essa frase está correta?";
         respostas[2] = "n";
         
-        perguntas[3] = "É correto afirma que no Brasil temos mais de um decimo de toda a água potável do mundo?";
+        perguntas[3] = " correto afirma que no Brasil temos mais de um decimo de toda a Ã¡gua potÃ¡vel do mundo?";
         respostas[3] = "s";
         
-        perguntas[4] = "Em muitos lugares os hormônios femininos da pílula anticoncepcional liberados na água através dos \n"
-                + "esgotos estão transformando peixes, répteis e anfíbios machos em fêmeas. Essa informação é verdadeira?";
+        perguntas[4] = "Em muitos lugares os hormônios femininos da pílula anticoncepcional liberados na Ã¡gua através dos \n"
+                + "esgotos estão transformando peixes, repteis e anfíbios machos em fêmeas. Essa informação é verdadeira?";
         respostas[4] = "s";
         
-        perguntas[5] = "Entre as várias consequências que o aquecimento global pode trazer uma delas é o aumento da atividade vulcânica,\n"
-                + "o que pode desencadear diversas erupções por todo o mundo e o cobrindo de cinzas.\n"
+        perguntas[5] = "Entre as vÃ¡rias consequências que o aquecimento global pode trazer uma delas é o aumento da atividade vulcânica,\n"
+                + " o que pode desencadear diversas erupções por todo o mundo e o cobrindo de cinzas.\n"
                 + "Você concorda com essa afirmação?";
         respostas[5] = "n";
+        
+        perguntas[6] = "A floresta amazônica a maior do mundo nunca sofreu queimadas e desmatamento";
+        respostas[6] = "n";
+        
+        perguntas[7] = "A partir do lixo orgânico é possível obter energia elétrica ?";
+        respostas[7] = "s";
+        
+        perguntas[8] = "Você sabia que ações diarias e rotineiras no seu dia a dia pode contribuir pode contribuir para a conservação e preservação em que vive ?";
+        respostas[8] = "s";
+        
+        perguntas[9] = "O Brasil já produz energia a partir da combustão do lixo, produzindo vapor e energia para aquecimento residencial.";
+        respostas[9] = "n";
         
         
     }

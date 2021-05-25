@@ -13,8 +13,8 @@ public class PerguntaNumerica extends Pergunta {
 
     @Override
     public void definirPerguntas() {
-        perguntas[0] = "Devido as grandes queimadas que ocorreram na Amozônia um fenômeno não muito \n"
-                + "comum ocorreu em São Paulo, a chuva negra. Em que ano isso aconteceu?\n"
+    	perguntas[0] = "Devido as grandes queimadas que ocorreram na Amozonia um fenomeno nao muito \n"
+                + "comum ocorreu em Sao Paulo, a chuva negra. Em que ano isso aconteceu?\n"
                 + "Digite o ano. ";
         respostas[0] = 2019;
 
@@ -41,7 +41,7 @@ public class PerguntaNumerica extends Pergunta {
         respostas[3] = 18;
 
         perguntas[4] = "A ONU decidiu inaugurar a primeira grande conferência mundial sobre o meio ambiente\n"
-                + "que foi o grande marco para a questão ambiental, a chamada Conferência das Nações Unidas Sobre o Ambiente \n"
+                + "que foi o grande marco para a questão ambiental, a chamada Conferência das Nações Unidas Sobre o  Ambiente "
                 + "Humano, que se realizou em Estocolmo, na Suécia. Também conhecido como Conferência de Estocolmo,\n"
                 + "Quando aconteceu essa conferência?\n"
                 + "Digite o ano. ";
