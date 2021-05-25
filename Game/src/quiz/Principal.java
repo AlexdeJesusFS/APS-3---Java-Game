@@ -18,7 +18,9 @@ public class Principal {
 
         pm.executarPergunta(0, jogador);
         //jogador.defineResultado();
-
+        System.out.println("-Quarta Pergunta-");
+        pc.executarPergunta(0, jogador);
+        System.out.println("-Quarta Pergunta-");
         pc.executarPergunta(0, jogador);
         //jogador.defineResultado();
         */

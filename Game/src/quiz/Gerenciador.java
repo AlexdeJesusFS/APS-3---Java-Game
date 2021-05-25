@@ -15,10 +15,11 @@ public class Gerenciador {
     public void menuInicial(Scanner tecla) {
         System.out.println("Bem vindo ao Quiz Green!!!\n"
                 + "\n-Regras-\n"
-                + "Você respondera 10 perguntas aletorias dos diferentes tipos de pergunta existentes\n"
-                + "para cada acerto 10 pontos serao adicionados ao seu score, a cada erro 10 pontos serao retirados\n"
-                + "apos as 10 pertuntas o seu resultado sera apresentado na tela.\n\n"
+                + "Você responderá 10 perguntas aleatórias dos diferentes tipos de pergunta existentes\n"
+                + "para cada acerto 10 pontos serão adicionados ao seu score, a cada erro 10 pontos serão retirados,\n"
+                + "após as 10 pertuntas o seu resultado será apresentado na tela.\n\n"
                 + "Digite [s] para prosseguir ou [n] para fechar o jogo.");
+        System.out.print("Resposta: ");
         String resposta = tecla.nextLine();
         if (resposta.toLowerCase().trim().equals("s")) {
             Iniciar(tecla);
@@ -26,7 +27,7 @@ public class Gerenciador {
             tecla.close();
             fecharJogo();
         } else {
-            System.out.println("***Resposta Invalida***".toUpperCase());
+            System.out.println("***Resposta Inválida***".toUpperCase());
             menuInicial(tecla);
         }
     }
@@ -39,7 +40,7 @@ public class Gerenciador {
         String nome = tecla.nextLine().trim();
         while ((nome.equals("") || nome.equals(null))) {
             System.out.println("");
-            System.out.println("Nome invalido");
+            System.out.println("Nome inválido");
             System.out.print("Digite o nome do(a) Jogador(a): ");
             nome = tecla.nextLine().trim();
         }
@@ -51,7 +52,8 @@ public class Gerenciador {
         PerguntaComplexa pc = new PerguntaComplexa();
         //metodo só vai funcionar se tiver ao menos 3 PerguntaSN, 3 PerguntaNumerica, 2 PerguntaMultiplaEscolha e 2 PerguntaComplexa
         gerarNumeros(psn, pn, pm, pc);
-
+        
+        System.out.println("");
         System.out.println("-Primeira Pergunta-");
         psn.executarPergunta(Sn1, p1);
 
@@ -79,13 +81,14 @@ public class Gerenciador {
         System.out.println("-Nona Pergunta-");
         pm.executarPergunta(Mult4, p1);
 
-        System.out.println("-Ultima Pergunta-");
+        System.out.println("-Última Pergunta-");
         pn.executarPergunta(Num1, p1);
 
         p1.defineResultado();
 
         String resposta;
         do {
+            System.out.println("");
             System.out.println("Jogar novamente?\n[s] para sim [n] para não");
             System.out.print("Resposta: ");
             resposta = tecla.nextLine().toLowerCase().trim();
@@ -118,7 +121,7 @@ public class Gerenciador {
         //Conjunto das variaveis das perguntas Complexas.
         Comp1 = gerador.nextInt(pc.getQtdPerguntas());
         Comp2 = verifica(Comp1, gerador, pc.getQtdPerguntas());
-
+        /*
         //demonstra os numeros criados, somente para visualizaçao em testes, deve estar comentado no codigo final.
         System.out.println("Sn1 :" + Sn1);
         System.out.println("Sn2 :" + Sn2);
@@ -130,6 +133,7 @@ public class Gerenciador {
         System.out.println("Mult4 :" + Mult4);
         System.out.println("Comp1 :" + Comp1);
         System.out.println("Comp2 :" + Comp2);
+        */
     }
 
     public int verifica(int comparador, Random gerador, int numero) {

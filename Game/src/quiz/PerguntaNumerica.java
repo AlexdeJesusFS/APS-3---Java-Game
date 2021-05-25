@@ -2,7 +2,7 @@ package quiz;
 
 public class PerguntaNumerica extends Pergunta {
 
-    private static final int N_PERGUNTAS = 4;
+    private static final int N_PERGUNTAS = 5;
     private String[] perguntas = new String[N_PERGUNTAS];
     private int[] respostas = new int[N_PERGUNTAS];
 
@@ -13,8 +13,8 @@ public class PerguntaNumerica extends Pergunta {
 
     @Override
     public void definirPerguntas() {
-        perguntas[0] = "Devido as grandes queimadas que ocorreram na Amozonia um fenomeno nao muito \n"
-                + "comum ocorreu em Sao Paulo, a chuva negra. Em que ano isso aconteceu?\n"
+        perguntas[0] = "Devido as grandes queimadas que ocorreram na Amozônia um fenômeno não muito \n"
+                + "comum ocorreu em São Paulo, a chuva negra. Em que ano isso aconteceu?\n"
                 + "Digite o ano. ";
         respostas[0] = 2019;
 
@@ -41,7 +41,7 @@ public class PerguntaNumerica extends Pergunta {
         respostas[3] = 18;
 
         perguntas[4] = "A ONU decidiu inaugurar a primeira grande conferência mundial sobre o meio ambiente\n"
-                + "que foi o grande marco para a questão ambiental, a chamada Conferência das Nações Unidas Sobre o  Ambiente "
+                + "que foi o grande marco para a questão ambiental, a chamada Conferência das Nações Unidas Sobre o Ambiente \n"
                 + "Humano, que se realizou em Estocolmo, na Suécia. Também conhecido como Conferência de Estocolmo,\n"
                 + "Quando aconteceu essa conferência?\n"
                 + "Digite o ano. ";
@@ -57,9 +57,9 @@ public class PerguntaNumerica extends Pergunta {
     public void checarResposta(int numeroPergunta, String resposta, Player jogador) {
         int respostaInt = Integer.parseInt(resposta);
         if (respostas[numeroPergunta] == (respostaInt)) {
-            jogador.adicionaPontos();
+            jogador.adicionaPontos(10);
         } else {
-            jogador.retiraPontos();
+            jogador.retiraPontos(10);
         }
     }
 
@@ -73,6 +73,7 @@ public class PerguntaNumerica extends Pergunta {
             verificarErro(resposta, 'n');
             System.out.println("");
         } catch (RespostaInvalidaException ex) {
+            System.out.println("");
             System.out.println(ex.getMessage());
             executarPergunta(numero, jogador);
         }

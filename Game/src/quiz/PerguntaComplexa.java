@@ -3,7 +3,7 @@ package quiz;
 public class PerguntaComplexa extends Pergunta {
 
     //atributos
-    private static final int N_PERGUNTAS = 4;
+    private static final int N_PERGUNTAS = 2;
     private final String[][] perguntaIni = new String[super.getQtdPerguntas()][6];
     private final String[][] perguntaMeio = new String[super.getQtdPerguntas()][6];
     private final String[][] perguntaFim = new String[super.getQtdPerguntas()][6];
@@ -32,11 +32,12 @@ public class PerguntaComplexa extends Pergunta {
     @Override
     public void checarResposta(int numeroPergunta, String resposta, Player jogador) {
         if (respostas[numeroPergunta].equals(resposta.toLowerCase().trim())) {
-            jogador.adicionaPontos();
+            jogador.adicionaPontos(15);
             System.out.println("Parábens você conseguiu! Acertou todas em sequência.");
+            System.out.println("");
         } else {
-            jogador.retiraPontos();
-            System.out.println("Nem todas as suas decisões foram corretas.");
+            jogador.retiraPontos(15);
+            System.out.println("Nem todas as suas escolhas foram corretas.");
             System.out.println("");
         }
     }
@@ -101,6 +102,7 @@ public class PerguntaComplexa extends Pergunta {
         respostaF += respostaA;
 
         texto = completarTexto(texto, getPerguntaFim(), respostaA, numero);
+        System.out.println("");
         System.out.println("--Resultado das respostas--");
         System.out.println(texto);
         System.out.println("");
@@ -194,34 +196,34 @@ public class PerguntaComplexa extends Pergunta {
          */
 
         //-Primeiro enunciado- Pergunta 0
-        perguntaIni[0][0] = "Voce entra em uma floresta e se encontra com um urso, ao perceber que ele te viu voce _____.";
+        perguntaIni[0][0] = "Você entra em uma floresta e se encontra com um urso, ao perceber que ele te viu você _____.";
         //-opcoes-
-        perguntaIni[0][1] = "a)Gritar com ele.";
-        perguntaIni[0][2] = "b)Chama a policia.";
+        perguntaIni[0][1] = "a)Grita com ele.";
+        perguntaIni[0][2] = "b)Chama a polícia.";
         perguntaIni[0][3] = "c)Brinca com ele.";
         perguntaIni[0][4] = "d)Se afasta devagar.";
-        perguntaIni[0][5] = "e)O pede para respeitar seu espaco pessoal.";
+        perguntaIni[0][5] = "e)O pede para respeitar seu espaço pessoal.";
         //-Segundo Enunciado-
-        perguntaMeio[0][0] = " \nEle começa a se aproxiamr, o que você faz é _____.";
+        perguntaMeio[0][0] = "\nEle começa a se aproxiamr, o que você faz é _____.";
         //-opcoes do segundo-
         perguntaMeio[0][1] = "a)Fugir.";
         perguntaMeio[0][2] = "b)Dancar com o Urso.";
         perguntaMeio[0][3] = "c)Gritar com ele.";
         perguntaMeio[0][4] = "d)Usar seu splay anti-urso.";
-        perguntaMeio[0][5] = "e)Sobir em uma arvore.";
+        perguntaMeio[0][5] = "e)Sobir em uma árvore.";
         //-terceiro Enunciado-
-        perguntaFim[0][0] = " O urso começa a se irritar, apesar de querer evitar o confronto não há outro jeito e você _____.";
+        perguntaFim[0][0] = "\nO urso começa a se irritar, apesar de querer evitar o confronto não há outro jeito e você _____.";
         //-opcoes do terceiro-
         perguntaFim[0][1] = "a)Corre.";
         perguntaFim[0][2] = "b)Fica nas pontas do pé, grita e sacudi um galho.";
         perguntaFim[0][3] = "c)Fingi estar morto.";
         perguntaFim[0][4] = "d)Confundi ele com fotos de animais.";
-        perguntaFim[0][5] = "e)Abraça-o e pedi desculpas pelo incomodo.";
+        perguntaFim[0][5] = "e)Abraça-o e pedi desculpas pelo incômodo.";
         //-resposta composta da juncao das 3 letras corretas-
         respostas[0] = "ddb";
-
+        /*
         //-Primeiro enunciado- Pergunta 1
-        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da terra refere-se ao _____.";
+        perguntaIni[1][0] = "O fenomeno anormal do aumento de temperatura da Terra refere-se ao _____.";
         //-opçoes-
         perguntaIni[1][1] = "a)a.";
         perguntaIni[1][2] = "b)b.";
@@ -248,7 +250,7 @@ public class PerguntaComplexa extends Pergunta {
         respostas[1] = "cac";
 
         //-Primeiro enunciado-Pergunta 2
-        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a agua, se deve principalmente as que provocam aquecimento global _____.";
+        perguntaIni[2][0] = "Atualmente percebemos que a degradação dos recursos naturais do planeta, como a água, se deve principalmente as que provocam aquecimento global _____.";
         //-opçoes-
         perguntaIni[2][1] = "a)a.";
         perguntaIni[2][2] = "b)Ações humanas.";
@@ -300,38 +302,38 @@ public class PerguntaComplexa extends Pergunta {
         perguntaFim[3][5] = "e)Ligar para seus amados e se despedir.";
         //resposta correta da 3
         respostas[3] = "dca";
-        
+        */
         //Pergunta 4
-        perguntaIni[4][0] = "No Brasil ocorreu um grande evento, no qual se reunirão lideres de 156 países e 56 representantes\n"
+        perguntaIni[1][0] = "No Brasil ocorreu um grande evento, no qual se reunirão lideres de 156 países e 56 representantes\n"
                 + "de todo o mundo para debater sobre a necessidade de conciliar o desenvolvimento socio econômico com a \n"
                 + "utilização dos recursos naturais. Essa reunião ficou conhecida como _____.";
         //-opçoes-
-        perguntaIni[4][1] = "a)Rio82.";
-        perguntaIni[4][2] = "b)Rio92.";
-        perguntaIni[4][3] = "c)Eco.";
-        perguntaIni[4][4] = "d)Reunião sobre o desenvolvimento e os recursos naturais.";
-        perguntaIni[4][5] = "e)Rio++..";
+        perguntaIni[1][1] = "a)Rio82.";
+        perguntaIni[1][2] = "b)Rio92.";
+        perguntaIni[1][3] = "c)Eco.";
+        perguntaIni[1][4] = "d)Reunião sobre o desenvolvimento e os recursos naturais.";
+        perguntaIni[1][5] = "e)Rio++.";
         
-        perguntaMeio[4][0] = "\nOutro envento sobre as questões do meio ambiente foi o Protocolo de Kyoto, em Kyoto no Japão, em \n"
+        perguntaMeio[1][0] = "\nOutro envento sobre as questões do meio ambiente foi o Protocolo de Kyoto, em Kyoto no Japão, em \n"
                 + "1997, que foi assinado pelos países integrantes da ONU. O que o protocola visava era a(o) _____.";
         
-        perguntaMeio[4][1] = "a)Redução da emissão de gases do efeito estufa.";
-        perguntaMeio[4][2] = "b)Reflorestamento.";
-        perguntaMeio[4][3] = "c)Procura do Godzilla.";
-        perguntaMeio[4][4] = "d)Extinção da fome.";
-        perguntaMeio[4][5] = "e)Cura do câncer.";
-        
-        perguntaFim[4][0] = "\nAlém dessa reunião houveram outras como a conferência de Paris que abordou assuntos sobre o meio \n"
+        perguntaMeio[1][1] = "a)Redução da emissão de gases do efeito estufa.";
+        perguntaMeio[1][2] = "b)Reflorestamento.";
+        perguntaMeio[1][3] = "c)Procura do Godzilla.";
+        perguntaMeio[1][4] = "d)Extinção da fome.";
+        perguntaMeio[1][5] = "e)Cura do câncer.";
+       
+        perguntaFim[1][0] = "\nAlém dessa reunião houveram outras como a conferência de Paris que abordou assuntos sobre o meio \n"
                 + "ambiente também. Nem todos os países do mundo adentaram ao acordo de Paris, como foi o caso da Síria que estava \n"
                 + "em guerra e de outros países que não participaram por escolha, entre eles está a(o) _____.";
 
-        perguntaFim[4][1] = "a)Chile.";
-        perguntaFim[4][2] = "b)Groelândia.";
-        perguntaFim[4][3] = "c)Rússia.";
-        perguntaFim[4][4] = "d)Australia.";
-        perguntaFim[4][5] = "e)Afica do sul.";
+        perguntaFim[1][1] = "a)Chile.";
+        perguntaFim[1][2] = "b)Groelândia.";
+        perguntaFim[1][3] = "c)Rússia.";
+        perguntaFim[1][4] = "d)Australia.";
+        perguntaFim[1][5] = "e)Afica do sul.";
         //-resposta composta da juncao das 3 letras corretas-
-        respostas[4] = "bac";
+        respostas[1] = "bac";
         
         
         

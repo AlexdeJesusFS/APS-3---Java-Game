@@ -2,7 +2,7 @@ package quiz;
 
 public class PerguntaMultiplaEscolha extends Pergunta {
 
-    private static final int N_PERGUNTAS = 4;
+    private static final int N_PERGUNTAS = 5;
     private final String[] perguntas = new String[getQtdPerguntas()];
     private final String[] respostas = new String[N_PERGUNTAS];
 
@@ -35,10 +35,10 @@ public class PerguntaMultiplaEscolha extends Pergunta {
         perguntas[1] = "Qual o principal gás responsavel pelo efeito estufa? \n"
                 + "a)Dióxido de Enxofre.\n"
                 + "b)Gás lacrimogêneo.\n"
-                + "c)Dióxido de cargono.\n"
-                + "d)Gás Carbônico.\n"
+                + "c)Gás carboro.\n"
+                + "d)Dióxido de carbono.\n"
                 + "e)Óxido de nitrogênio.\n";
-        respostas[1] = "c";
+        respostas[1] = "d";
 
         perguntas[2] = "Através da fotossintese as plantas produzem e armazenam seu próprio alimento, a ...\n"
                 + "Complete a frase:\n"
@@ -58,21 +58,21 @@ public class PerguntaMultiplaEscolha extends Pergunta {
         respostas[3] = "a";
         
         perguntas[4] = "Apesar dos comercias de ursos polares felizes a Coca-Cola causa um mal aos nossos amigos brancos.\n"
-                + "O texto acima se refere ao: \n"
+                + "O texto acima se refere a(ao): \n"
                 + "a)Quebra da camada de ozônio\n"
                 + "b)Aquecimento global\n"
                 + "c)Dano nos lençois freáticos\n"
                 + "d)Destruição do clima\n"
-                + "e)Uso abosivo de sua imagem sendo que os ursos não são pagos\n";
+                + "e)Uso abosivo de suas imagens sendo que os ursos não são pagos\n";
         respostas[4] = "b";
     }
 
     @Override
     public void checarResposta(int numeroPergunta, String resposta, Player jogador) {
         if (respostas[numeroPergunta].equals(resposta.toLowerCase().trim())) {
-            jogador.adicionaPontos();
+            jogador.adicionaPontos(10);
         } else {
-            jogador.retiraPontos();
+            jogador.retiraPontos(10);
         }
     }
 

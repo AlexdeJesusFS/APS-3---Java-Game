@@ -18,12 +18,12 @@ public class Player {
     }
 
     //Principal:
-    public void adicionaPontos() {
-        setPontuacao(getPontuacao() + 10);
+    public void adicionaPontos(int pontos) {
+        setPontuacao(getPontuacao() + pontos);
     }
 
-    public void retiraPontos() {
-        setPontuacao(getPontuacao() - 10);
+    public void retiraPontos(int pontos) {
+        setPontuacao(getPontuacao() - pontos);
     }
 
     public void defineResultado() {

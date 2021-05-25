@@ -3,7 +3,7 @@ package quiz;
 public class PerguntaSN extends Pergunta {
 
     //atributos
-    private static final int N_PERGUNTAS = 5;
+    private static final int N_PERGUNTAS = 6;
     private final String[] perguntas = new String[N_PERGUNTAS];
     private String[] respostas = new String[N_PERGUNTAS];
 
@@ -18,7 +18,7 @@ public class PerguntaSN extends Pergunta {
         perguntas[0] = "O efeito estufa é um evento decorrente da quebra da camada de ozônio?";
         respostas[0] = "n";
 
-        perguntas[1] = "A partir do lixo orgânico é possivel produzir energia elétrica?";
+        perguntas[1] = "A partir do lixo orgânico é possível produzir energia elétrica?";
         respostas[1] = "s";
 
         perguntas[2] = "A floresta amazônica, a maior floresta tropical do mundo, nunca sofreu queimadas e quase não sofre com desmatamento ilegal.\n"
@@ -29,11 +29,11 @@ public class PerguntaSN extends Pergunta {
         respostas[3] = "s";
         
         perguntas[4] = "Em muitos lugares os hormônios femininos da pílula anticoncepcional liberados na água através dos \n"
-                + "esgotos estão transformando peixes, repteis e anfíbios machos em fêmeas. Essa informação é verdadeira?";
+                + "esgotos estão transformando peixes, répteis e anfíbios machos em fêmeas. Essa informação é verdadeira?";
         respostas[4] = "s";
         
         perguntas[5] = "Entre as várias consequências que o aquecimento global pode trazer uma delas é o aumento da atividade vulcânica,\n"
-                + " o que pode desencadear diversas erupções por todo o mundo e o cobrindo de cinzas.\n"
+                + "o que pode desencadear diversas erupções por todo o mundo e o cobrindo de cinzas.\n"
                 + "Você concorda com essa afirmação?";
         respostas[5] = "n";
         
@@ -43,9 +43,9 @@ public class PerguntaSN extends Pergunta {
     @Override
     public void checarResposta(int numeroPergunta, String resposta, Player jogador) {
         if (respostas[numeroPergunta].equals(resposta.toLowerCase().trim())) {
-            jogador.adicionaPontos();
+            jogador.adicionaPontos(10);
         } else {
-            jogador.retiraPontos();
+            jogador.retiraPontos(10);
         }
     }
 

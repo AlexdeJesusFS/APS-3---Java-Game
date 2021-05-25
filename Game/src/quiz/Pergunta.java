@@ -41,17 +41,17 @@ public abstract class Pergunta {
         switch (tipo) {
             case 's':
                 if (!verificar(resposta)) {
-                    throw new RespostaInvalidaException("Resposta Invalida! Digite somente [s] ou [n].");
+                    throw new RespostaInvalidaException("Resposta Inválida! Digite somente [s] ou [n].");
                 }
                 break;
             case 'm':
                 if (!verificar(resposta)) {
-                    throw new RespostaInvalidaException("Resposta Invalida! Digite somente umas das alternativas listadas.");
+                    throw new RespostaInvalidaException("Resposta Inválida! Digite somente umas das alternativas listadas.");
                 }
                 break;
             case 'n':
                 if (!verificar(resposta)) {
-                    throw new RespostaInvalidaException("Resposta Invalida! Digite somente números positivos.");
+                    throw new RespostaInvalidaException("Resposta Inválida! Digite somente números positivos.");
                 }
         }
     }
