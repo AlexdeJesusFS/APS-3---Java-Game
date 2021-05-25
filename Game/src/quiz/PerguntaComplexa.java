@@ -196,7 +196,7 @@ public class PerguntaComplexa extends Pergunta {
          */
 
         //-Primeiro enunciado- Pergunta 0
-        perguntaIni[0][0] = "Você entra em uma floresta e se encontra com um urso, ao perceber que ele te viu você _____.";
+        perguntaIni[0][0] = "Você entra em uma floresta e se encontra com um urso, ao perceber que ele te viu e você _____.";
         //-opcoes-
         perguntaIni[0][1] = "a)Grita com ele.";
         perguntaIni[0][2] = "b)Chama a polícia.";
