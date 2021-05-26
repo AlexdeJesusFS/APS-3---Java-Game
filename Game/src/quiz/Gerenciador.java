@@ -51,7 +51,7 @@ public class Gerenciador {
         PerguntaNumerica pn = new PerguntaNumerica();
         PerguntaMultiplaEscolha pm = new PerguntaMultiplaEscolha();
         PerguntaComplexa pc = new PerguntaComplexa();
-        //metodo só vai funcionar se tiver ao menos 3 PerguntaSN, 3 PerguntaNumerica, 2 PerguntaMultiplaEscolha e 2 PerguntaComplexa
+        
         gerarNumeros(psn, pn, pm, pc);
         
         System.out.println("");

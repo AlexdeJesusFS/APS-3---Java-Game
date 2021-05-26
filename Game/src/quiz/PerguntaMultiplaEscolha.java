@@ -82,12 +82,12 @@ public class PerguntaMultiplaEscolha extends Pergunta {
                 + "e)lixo biológico\n";
         respostas[6] = "d";
         
-        perguntas[7] = "O lixo orgânico e de origem biológica, e são exemplos: \n"
+        perguntas[7] = "O lixo orgânico é de origem biológica, e são exemplos: \n"
                 + "a)papel\n"
                 + "b)vidro\n"
                 + "c)metal\n"
                 + "d)isopor e sacolas plásticas\n"
-                + "e)resíduos de alimentos, dejetos humanos cascas e sementes\n";
+                + "e)resíduos de alimentos, dejetos humanos, cascas e sementes\n";
         respostas[7] = "e";
         
         perguntas[8] = " Atráves da fotossínteseas as plantas produzem e armazenam seu própio alimento a:\n"

@@ -231,15 +231,15 @@ public class PerguntaComplexa extends Pergunta {
         perguntaIni[1][4] = "d)Furacões.";
         perguntaIni[1][5] = "e)Tempestades solares.";
         //-Segundo Enunciado-
-        perguntaMeio[1][0] = " \nEste fenômeno ocorre devido a _____.";
+        perguntaMeio[1][0] = " \nEste fenômeno ocorre devido a(o) _____.";
         //-opções do segundo-
         perguntaMeio[1][1] = "a)Produção exagerada e acumulo de gases poluentes na atmosfera terrestre.";
-        perguntaMeio[1][2] = "b)b.";
-        perguntaMeio[1][3] = "c)c.";
-        perguntaMeio[1][4] = "d)d.";
-        perguntaMeio[1][5] = "e)e.";
+        perguntaMeio[1][2] = "b)Gases humanos em excesso.";
+        perguntaMeio[1][3] = "c)Godzilla.";
+        perguntaMeio[1][4] = "d)Radiação.";
+        perguntaMeio[1][5] = "e)Quebra da camada de ozônio.";
         //-terceiro Enunciado-
-        perguntaFim[1][0] = " \nO principal gás resposável por esse fenômeno é o _____.";
+        perguntaFim[1][0] = " \nO principal gás resposável por isso é o _____.";
         //-opcoes do terceiro-
         perguntaFim[1][1] = "a)Gás carbonico.";
         perguntaFim[1][2] = "b)Gás de cozinha.";
